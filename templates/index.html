@@ -1,0 +1,256 @@
+{% extends 'layout/theme.html' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div class="about">
+        <div class="helping-people-with">Helping People with Care Through Online</div>
+        <div class="find-book-apoinment">Find book apoinment and answers of your problems with Here!</div>
+        <div class="about-video">
+            <div class="rectangle20">
+                <video class="mask-group-icon" alt="Video Medical" src='{{ url_for('static', filename='videos/medical_video.mp4') }}' autoplay muted></video>
+            </div>
+            <div class="about-desc">
+                <div class="rectangle21">
+                    <div class="assiting-you-with">Assiting you with Helpfull Information</div>
+                </div>
+            </div>
+            <div class="about-desc1">
+                <div class="rectangle21">
+                </div>
+                <div class="helping-you-with-container">
+                    <p class="helping-you-with">Helping you with excitements </p>
+                    <p class="helping-you-with">is our speciallty</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NLP -->
+    <div class="hai-description">
+        <div class="hai-descrption-icon">
+            <div class="hai-descrption-icon-child">
+                <div class="meet-hai-the">Meet HAI the Helpful AI</div>
+            </div>
+        </div>
+        <div class="ask-hai-of">Ask HAI of your medical concerns, it will provide you some solutions!</div>
+    </div>
+
+    <div class="hai-information">
+        <div class="descriptions">
+            <div class="rectangle17">
+                <div class="descriptions1">Descriptions</div>
+                <div class="providing-and-giving">Providing and giving description of your possible problems</div>
+                <img class="description-icon" alt="" src={{ url_for('static', filename='images/description-icon.png') }}>
+            </div>
+        </div>
+
+        <div class="descriptions">
+            <div class="rectangle17">
+                <div class="hai-can-give">HAI can give you treatments for  medical problem your having</div>
+                <div class="treatment1">Treatment</div>
+                <img class="treatment-icon" alt="" src={{ url_for('static', filename='images/treatment-icon.png') }}>
+            </div>
+        </div>
+        <div class="descriptions">
+            <div class="rectangle17">
+                <div class="dont-worry-hai">Don’t worry HAI got your back! by giving you some helpful tips on your problems</div>
+                <div class="diets-workout1">Diets & Workout</div>
+                <img class="diets-icon" alt="" src={{ url_for('static', filename='images/diets-icon.png') }}>
+            </div>
+        </div>
+    </div>
+
+    <div class="hai">
+        <div class="group2">
+            <div class="what-are-you">What are you waiting for? Ask Helpful AI here!</div>
+            <a href="/chatbot" class="search-bar">
+                <div class="rectangleHAI">
+                </div>
+                <div class="ask-helpful-ai">Ask Helpful AI</div>
+            </a>
+        </div>
+        <img class="hands-phone-icon" alt="" src={{ url_for('static', filename='images/handphone.png') }}>
+    </div>
+
+    <!-- Information Management -->
+    <div class="records">
+        <div class="frame-wrapper">
+            <div class="frame">
+                <div class="group">
+                    <div class="rectangle14">
+                        <div class="see-our-progress">See our progress in helping people</div>
+                        <div class="group1">
+                            <!-- <div><a href="/information" class="rectangle15">Check percentage</a></div> -->
+                            <a href="/information" class="rectangle15"></a>
+                            <div class="check-percentage">Check percentage</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="allura-stats-graph" alt="" src={{ url_for('static', filename='images/statsGraph.png') }}>
+    </div>
+
+    <!-- Visualization -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="visualitation">
+                <div class="col-12 visualitation-intro">
+                    <div class="see-how-one">See how One Helpful takes care of our beloved patients with care</div>
+                    <div class="one-helpful-visualization">One Helpful Visualization</div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="gender-cart">
+                            <div class="rectangle12">
+                                <canvas id="genderChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="age-cart">
+                            <div class="rectangle12">
+                                <canvas id="ageChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- symptoms -->
+    <div class="symptomsai-description">
+        <div class="symptomsai-intro">
+            <div class="still-need-more">Still need more Information? Ask Sypmptoms AI!</div>
+            <div class="need-more-assistance">Need more assistance in finding solution of your problem?  Symptoms AI will give Answers from you Questions</div>
+        </div>
+        <div class="keywords">
+            <div class="keywords1">
+                <div class="pneumonia">
+                    <div class="rectangle2">
+                        <div class="pneumonia1">Pneumonia</div>
+                        <img class="pneumonia-icon" alt="" src={{ url_for('static', filename='images/pneumonia-icon.png') }}>
+                    </div>
+                </div>
+                <div class="allergy">
+                    <div class="rectangle3">
+                        <div class="allergy1">Allergy</div>
+                        <img class="allergy-icon" alt="" src={{ url_for('static', filename='images/allergy-icon.png') }}>
+                    </div>
+                </div>
+                <div class="cough">
+                    <div class="rectangle2">
+                        <div class="cough1">cough</div>
+                        <img class="cough-icon" alt="" src={{ url_for('static', filename='images/cough-icon.png') }}>
+                    </div>
+                </div>
+                <div class="joint-pain">
+                    <div class="rectangle3">
+                        <div class="joint-pain1">joint_pain</div>
+                        <img class="joint-pain-icon" alt="" src={{ url_for('static', filename='images/joint_pain.png') }}>
+                    </div>
+                </div>
+                <div class="headache">
+                    <div class="rectangle2">
+                        <div class="pneumonia1">headache</div>
+                        <img class="headache-icon" alt="" src={{ url_for('static', filename='images/headache-icon.png') }}>
+                    </div>
+                </div>
+                <div class="cough2">
+                    <div class="rectangle2">
+                        <div class="cough3">cough</div>
+                        <img class="cough-icon1" alt="" src={{ url_for('static', filename='images/cough-icon.png') }}>
+                    </div>
+          					</div>
+                <div class="anxiety">
+                    <div class="rectangle3">
+                        <div class="anxiety1">anxiety</div>
+                        <img class="anxiety-icon" alt="" src={{ url_for('static', filename='images/anxiety-icon.png') }}>
+                    </div>
+                </div>
+                <div class="cramps">
+                    <div class="rectangle2">
+                        <div class="cramps1">cramps</div>
+                        <img class="cramps-icon" alt="" src={{ url_for('static', filename='images/cramps-icon.png') }}>
+                    </div>
+                </div>
+                <div class="throat">
+                    <div class="rectangle3">
+                        <div class="throat-irritation">throat_irritation </div>
+                        <img class="throat-icon" alt="" src={{ url_for('static', filename='images/throat-icon.png') }}>
+                    </div>
+                </div>
+                <div class="aids">
+                    <div class="rectangle2">
+                        <div class="aids1">AIDS </div>
+                        <img class="aids-icon" alt="" src={{ url_for('static', filename='images/AIDS-icon.png') }}>
+                    </div>
+                </div>
+            </div>
+            <div class="here-are-some">Here are some keywords that might help</div>
+        </div>
+    </div>
+    <div class="symptomsai">
+        <div class="ask-symptomsai">
+            <div class="rectangle">
+                <div class="description">
+                    <b class="come-and-ask">Come and ask here</b>
+                    <div class="give-symptoms-ai">Give Symptoms AI keyword of your problem and it will give you some solutions!</div>
+                </div>
+                <div class="ask-symptomsai-btn">
+                    <a href="/symptoms" class="rectangle1">
+                        <div class="ask-symptoms-ai">Ask Symptoms AI</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="created-by-abc">Created by ABC with love | All rights reserved</div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+    <script>
+        fetch('/data')
+        .then(response => response.json())
+        .then(data => {
+            var genderCtx = document.getElementById('genderChart').getContext('2d');
+            var genderChart = new Chart(genderCtx, {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(data.gender_counts),
+                    datasets: [{
+                        label: 'Gender Distribution',
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
+                        data: Object.values(data.gender_counts),
+                    }]
+                },
+            });
+
+            var ageCtx = document.getElementById('ageChart').getContext('2d');
+            var ageChart = new Chart(ageCtx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(data.age_classification),
+                    datasets: [{
+                        label: 'Age Classification',
+                        data: Object.values(data.age_classification),
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
+                    }]
+                },
+            });
+        });
+    </script>
+{% endblock %}

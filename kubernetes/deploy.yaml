@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: medicalapp
+  labels:
+    app: medicalapp
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: medicalapp
+  template:
+    metadata:
+      name: medicalapp-pod
+      labels:
+        app: medicalapp
+    spec:
+      containers:
+        - name: medicalapp
+          image: akwilaprb/medicalapp
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP
+      restartPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: medicalapp
+  labels:
+    app: medicalapp
+spec:
+    selector:
+        app: medicalapp
+    ports:
+        - protocol: TCP
+          port: 5000
+          targetPort: 5000
+    type: LoadBalancer

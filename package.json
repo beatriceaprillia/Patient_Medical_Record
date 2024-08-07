@@ -1,0 +1,17 @@
+{
+  "name": "akwilakebo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./static/css/tailwind.css -o ./static/css/output.css --watch",
+    "dev": "pyton main.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

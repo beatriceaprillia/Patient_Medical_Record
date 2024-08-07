@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="C:\\Users\\ilham\\Documents\\President University\\Semester 5\\HAI-Chatbot\\static\\chat.css"/>
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Adamina:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@500&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;600&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="chatbot-page">
+    		<div class="footer">
+      			<div class="created-by-abc">Created by ABC with love | All rights reserved</div>
+    		</div>
+    		<div class="chatbot">
+      			<div class="rectangle">
+      			</div>
+      			<div class="frame">
+        				<div class="she-one-day">She one day hitted me when i was small for telling “inky pinky ponky, father is a donkey</div>
+      			</div>
+      			<div class="frame1">
+        				<div class="she-one-day">She one day hitted me when i was small for telling “inky pinky ponky, father is a donkey</div>
+      			</div>
+      			<div class="input-field">
+                    <input type="text" class="type-your-message" placeholder="Type your message here..." onkeydown="if(event.key === 'Enter') submitMessage(this)">
+                </div>
+                <button class="send-button" onclick="submitMessage()">
+                    <div>
+                        <img class="interface-essentialsend-icon" alt="" src="C:\\Users\\ilham\\Documents\\President University\\Semester 5\\HAI-Chatbot\\static\\images\\Send.svg">
+                    </div>
+                </button>
+      			<div class="header">
+        				<div class="one-helpful">One Helpful</div>
+        				<div class="about">About</div>
+        				<div class="about">Helpful AI</div>
+        				<div class="about">Information</div>
+        				<div class="search-bar">
+                            <button onclick="submitSearch()">
+                                <div class="rectangle1">
+                                </div>
+                                <div class="search">Search</div>
+                            </button>
+          					<div class="rectangle2">
+                            </div>
+                            <input type="text" class="search-disease-hospitals" placeholder="Search disease, hospitals, countries">
+                            </div>
+      			</div>
+    		</div>
+    		<div class="hai-description">
+      			<div class="hai-icon">
+        				<div class="hai-icon-child">
+        				</div>
+        				<div class="hai-the-helpfull">HAI the Helpfull AI</div>
+      			</div>
+      			<div class="ask-hai-of-container">
+        				<span>Ask HAI of </span>
+        				<span class="your">your</span>
+        				<span> </span>
+        				<span class="your">medical</span>
+        				<span> concerns, it will provide you some </span>
+        				<span class="your">solutions</span>
+        				<span>!</span>
+      			</div>
+    		</div>
+  	</div>
+
+
+
+      <script>
+        function submitMessage(inputElement) {
+            var message = inputElement.value;
+            // You can now use the message variable to send the message
+            // For example, you can send it to a server using AJAX
+            console.log(message); // This will print the message to the console
+            inputElement.value = ''; // This will clear the input field
+        }
+    </script>
+
+    <script>
+        function submitMessage() {
+            var inputElement = document.getElementById('messageInput');
+            var message = inputElement.value;
+            // You can now use the message variable to send the message
+            // For example, you can send it to a server using AJAX
+            console.log(message); // This will print the message to the console
+            inputElement.value = ''; // This will clear the input field
+        }
+    </script>
+
+<script>
+    function submitSearch() {
+        var inputElement = document.querySelector('search-disease-hospitals');
+        var message = inputElement.value;
+        // You can now use the query variable to perform the search
+        // For example, you can send it to a server using AJAX
+        console.log(query); // This will print the query to the console
+        inputElement.value = ''; // This will clear the input field
+    }
+</script>
+
+</body>
+</html>

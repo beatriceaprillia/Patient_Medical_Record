@@ -1,0 +1,1085 @@
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.created-by-abc {
+    position: relative;
+    line-height: 100.69%;
+}
+.footer {
+    position: absolute;
+    top: 6197px;
+    left: 0px;
+    background-color: #1f2021;
+    width: 1701px;
+    height: 209px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 160px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+    font-family: Adamina;
+}
+.rectangle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 3px 49px 9px rgba(0, 0, 0, 0.06);
+    border-radius: 47px;
+    background-color: #424242;
+    border: 4px solid #03a9f4;
+    box-sizing: border-box;
+    width: 1239.5px;
+    height: 273px;
+}
+.come-and-ask {
+    position: absolute;
+    width: 99.95%;
+    top: calc(50% - 92.4px);
+    left: 0.04%;
+    display: inline-block;
+    height: 75px;
+}
+.give-symptoms-ai {
+    position: absolute;
+    width: 97.45%;
+    top: calc(50% - 7.58px);
+    left: 0%;
+    font-size: 32px;
+    font-family: Outfit;
+    display: inline-block;
+    height: 100px;
+}
+.description {
+    position: absolute;
+    width: 51.5%;
+    top: calc(50% - 95.84px);
+    right: 45.36%;
+    left: 3.15%;
+    height: 184.8px;
+}
+.rectangle1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 0px 49px -2px rgba(0, 0, 0, 0.19);
+    border-radius: 81px;
+    background-color: #03a9f4;
+    width: 369px;
+    height: 93px;
+    transition: background-color 0.3s ease;
+}
+.rectangle1:hover {
+    background-color: #01579b;
+}
+.shape-icon {
+    position: absolute;
+    height: 24.3%;
+    width: 7.05%;
+    top: 40.73%;
+    right: 11.7%;
+    bottom: 34.97%;
+    left: 81.26%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    display: none;
+}
+.ask-symptoms-ai {
+    position: absolute;
+    top: 26px;
+    left: 59.04px;
+    font-weight: 500;
+    display: inline-block;
+    width: 277px;
+    height: 41px;
+    color: #fff;
+}
+.ask-symptomsai-btn {
+    position: absolute;
+    top: 91px;
+    left: 795.96px;
+    width: 369px;
+    height: 93px;
+    font-size: 32px;
+    font-family: Outfit;
+}
+.ask-symptomsai {
+    width: 1239.5px;
+    position: relative;
+    height: 273px;
+}
+.symptomsai {
+    position: absolute;
+    top: 5267px;
+    left: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Advent Pro';
+}
+.still-need-more {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 596.5px);
+    line-height: 141.5%;
+    font-weight: 600;
+    display: inline-block;
+    width: 1193px;
+    height: 108px;
+}
+.need-more-assistance {
+    position: absolute;
+    width: 80.89%;
+    top: calc(50% - 10px);
+    left: 0.42%;
+    font-size: 32px;
+    font-family: Outfit;
+    white-space: pre-wrap;
+    display: inline-block;
+    height: 100px;
+}
+.symptomsai-intro {
+    width: 1193px;
+    position: relative;
+    height: 180px;
+}
+.rectangle2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    width: 220px;
+    height: 218px;
+}
+.pneumonia1 {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 55px);
+    font-weight: 500;
+}
+.pneumonia-icon {
+    position: absolute;
+    height: 31.65%;
+    width: 31.36%;
+    top: 22.48%;
+    right: 34.55%;
+    bottom: 45.87%;
+    left: 34.09%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.pneumonia {
+    position: absolute;
+    top: 248px;
+    left: 1026px;
+    width: 220px;
+    height: 218px;
+}
+.rectangle3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    width: 221px;
+    height: 218px;
+}
+.allergy1 {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 39.5px);
+    font-weight: 500;
+}
+.allergy-icon {
+    position: absolute;
+    height: 32.98%;
+    width: 29.77%;
+    top: 22.5%;
+    right: 35.35%;
+    bottom: 44.52%;
+    left: 34.88%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.allergy {
+    position: absolute;
+    top: 248px;
+    left: 769px;
+    width: 221px;
+    height: 218px;
+}
+.cough1 {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 30px);
+    font-weight: 500;
+}
+.cough-icon {
+    position: absolute;
+    height: 31.33%;
+    width: 31.55%;
+    top: 24.48%;
+    right: 34.23%;
+    bottom: 44.19%;
+    left: 34.23%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.cough {
+    position: absolute;
+    top: 248px;
+    left: 513px;
+    width: 220px;
+    height: 218px;
+}
+.joint-pain1 {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 53.5px);
+    font-weight: 500;
+}
+.joint-pain-icon {
+    position: absolute;
+    height: 28.62%;
+    width: 24.07%;
+    top: 25.13%;
+    right: 37.73%;
+    bottom: 46.25%;
+    left: 38.19%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.joint-pain {
+    position: absolute;
+    top: 248px;
+    left: 256px;
+    width: 221px;
+    height: 218px;
+}
+.headache-icon {
+    position: absolute;
+    height: 28.9%;
+    width: 26.41%;
+    top: 24.77%;
+    right: 37.47%;
+    bottom: 46.33%;
+    left: 36.12%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.headache {
+    position: absolute;
+    top: 248px;
+    left: 0px;
+    width: 220px;
+    height: 218px;
+}
+.cough3 {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 35px);
+    font-weight: 500;
+}
+.cough-icon1 {
+    position: absolute;
+    height: 26.61%;
+    width: 28.09%;
+    top: 23.85%;
+    right: 35.95%;
+    bottom: 49.54%;
+    left: 35.96%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.cough2 {
+    position: absolute;
+    top: 0px;
+    left: 1026px;
+    width: 220px;
+    height: 218px;
+}
+.anxiety1 {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 36.5px);
+    font-weight: 500;
+}
+.anxiety-icon {
+    position: absolute;
+    height: 27.8%;
+    width: 24.89%;
+    top: 23.27%;
+    right: 37.34%;
+    bottom: 48.94%;
+    left: 37.77%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.anxiety {
+    position: absolute;
+    top: 0px;
+    left: 769px;
+    width: 221px;
+    height: 218px;
+}
+.cramps1 {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 45px);
+    font-weight: 500;
+}
+.cramps-icon {
+    position: absolute;
+    height: 24.82%;
+    width: 27.82%;
+    top: 25.43%;
+    right: 36.77%;
+    bottom: 49.75%;
+    left: 35.41%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.cramps {
+    position: absolute;
+    top: 0px;
+    left: 513px;
+    width: 220px;
+    height: 218px;
+}
+.throat-irritation {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 84.5px);
+    font-weight: 500;
+}
+.throat-icon {
+    position: absolute;
+    height: 26.01%;
+    width: 26.15%;
+    top: 25.53%;
+    right: 36.69%;
+    bottom: 48.46%;
+    left: 37.16%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.throat {
+    position: absolute;
+    top: 0px;
+    left: 256px;
+    width: 221px;
+    height: 218px;
+}
+.aids1 {
+    position: absolute;
+    top: 139px;
+    left: calc(50% - 27px);
+    font-weight: 500;
+}
+.aids-icon {
+    position: absolute;
+    height: 26.15%;
+    width: 28.41%;
+    top: 25.68%;
+    right: 35.68%;
+    bottom: 48.17%;
+    left: 35.91%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.aids {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 220px;
+    height: 218px;
+}
+.keywords1 {
+    width: 1246px;
+    position: relative;
+    height: 466px;
+}
+.here-are-some {
+    width: 965px;
+    position: relative;
+    font-size: 32px;
+    color: #fff;
+    display: inline-block;
+    height: 54px;
+    flex-shrink: 0;
+}
+.keywords {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    font-size: 24px;
+    color: #000;
+    font-family: Outfit;
+}
+.symptomsai-description {
+    position: absolute;
+    top: 4449px;
+    left: 227px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 49px;
+    font-family: 'Advent Pro';
+}
+.see-how-one {
+    position: absolute;
+    top: 85px;
+    left: calc(50% - 333.5px);
+    display: inline-block;
+    width: 667px;
+}
+.one-helpful-visualitation {
+    position: absolute;
+    top: 85px;
+    left: calc(50% - 333.5px);
+    display: inline-block;
+    width: 667px;
+    font-family: 'Advent Pro';
+}
+.visualitation-intro {
+    width: 667px;
+    position: relative;
+    height: 165px;
+}
+.rectangle12 {
+    position: absolute;
+    top: 290px;
+    left: 0px;
+    border-radius: 40px;
+    background-color: #fff;
+    width: 803.6px;
+    height: 748px;
+    opacity: 0.5;
+}
+.gender {
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 59.8px);
+    line-height: 141.5%;
+    display: inline-block;
+    width: 235.7px;
+    height: 43px;
+}
+.gender-cart {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 803.6px;
+    height: 748px;
+}
+.age {
+    position: absolute;
+    top: 29px;
+    left: calc(50% - 45.45px);
+    line-height: 141.5%;
+    display: inline-block;
+    width: 89.2px;
+    height: 43px;
+}
+.age-cart {
+    position: absolute;
+    top: 0px;
+    left: 857.9px;
+    width: 743.1px;
+    height: 748px;
+}
+.carts {
+    width: 1601px;
+    position: relative;
+    height: 748px;
+    text-align: left;
+    font-size: 40px;
+    font-family: Adamina;
+}
+.visualitation {
+    position: absolute;
+    top: 3190px;
+    left: -1px;
+    background-color: #424242;
+    width: 1703px;
+    height: 1101px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 64px 77px;
+    box-sizing: border-box;
+    gap: 41px;
+    text-align: center;
+    font-size: 32px;
+}
+.rectangle14 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 40px;
+    background-color: #379a3c;
+    width: 1250px;
+    height: 379px;
+}
+.group {
+    width: 1250px;
+    position: relative;
+    height: 379px;
+    z-index: 0;
+}
+.rectangle15 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 28px;
+    background-color: #fff;
+    width: 365px;
+    height: 56px;
+    transition: background-color 0.3s ease;
+}
+.rectangle15:hover {
+    background-color: #01579b;
+}
+
+.check-percentage {
+    position: absolute;
+    top: 16px;
+    left: 101px;
+    font-weight: 500;
+    color: #2e7d32;
+    transition: color 0.3s ease;
+}
+.check-percentage:hover {
+    color: #fff;
+}
+.group1 {
+    width: 365px;
+    position: absolute;
+    margin: 0 !important;
+    top: 218px;
+    left: 764px;
+    height: 56px;
+    z-index: 1;
+}
+.see-our-progress {
+    width: 421px;
+    position: absolute;
+    margin: 0 !important;
+    top: 105px;
+    left: calc(50% + 160px);
+    font-size: 40px;
+    line-height: 114.5%;
+    font-weight: 500;
+    font-family: 'Advent Pro';
+    color: #fff;
+    display: inline-block;
+    height: 84px;
+    flex-shrink: 0;
+    z-index: 2;
+}
+.frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    gap: 10px;
+}
+.frame-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    z-index: 0;
+}
+.allura-stats-graph {
+    width: 482px;
+    position: absolute;
+    margin: 0 !important;
+    top: 69px;
+    left: 56px;
+    height: 261px;
+    object-fit: cover;
+    z-index: 1;
+}
+.records {
+    position: absolute;
+    top: 2665px;
+    left: 244px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 20px;
+    color: #379a3c;
+}
+.rectangle16 {
+    position: absolute;
+    top: 114px;
+    left: 24px;
+    border-radius: 28px;
+    background-color: #fff;
+    width: 365px;
+    height: 56px;
+}
+
+.rectangleHAI{
+    position: absolute;
+    top: 114px;
+    left: 24px;
+    border-radius: 28px;
+    background-color: #fff;
+    width: 365px;
+    height: 56px;
+    transition: background-color 0.3s ease;
+}
+
+.rectangleHAI:hover {
+    background-color: #2e7d32;
+}
+
+.ask-helpful-ai {
+    position: absolute;
+    top: 130px;
+    left: 130px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #01579b;
+    transition: color 0.3s ease;
+    width: 124px;
+    font-family: Outfit;
+    color: #01579b;
+    text-align: left;
+
+}
+.ask-helpful-ai:hover {
+    color: #fff;
+}
+
+.helpful-ai {
+    position: relative;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.helpful-ai:hover {
+    color: #03a9f4;
+}
+.what-are-you {
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 210.5px);
+    font-size: 40px;
+    line-height: 114.5%;
+    font-weight: 500;
+    font-family: 'Advent Pro';
+    color: #fff;
+    display: inline-block;
+    width: 421px;
+    height: 84px;
+}
+.group2 {
+    width: 421px;
+    position: relative;
+    height: 170px;
+}
+.hands-phone-icon {
+    width: 559px;
+    position: relative;
+    height: 358px;
+    object-fit: cover;
+}
+.hai {
+    position: absolute;
+    top: 2039px;
+    left: 264px;
+    border-radius: 40px;
+    background-color: #01579b;
+    width: 1240px;
+    height: 396px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 31px;
+    box-sizing: border-box;
+    gap: 158px;
+    font-size: 20px;
+    color: #01579b;
+}
+.rectangle17 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 40px;
+    background-color: #f9f9f9;
+    width: 378px;
+    height: 375.2px;
+}
+.providing-and-giving {
+    position: absolute;
+    top: 212.42px;
+    left: calc(50% - 145px);
+    display: inline-block;
+    width: 286px;
+    height: 79.4px;
+}
+.description-icon {
+    position: absolute;
+    height: 18.2%;
+    width: 17.49%;
+    top: 21.06%;
+    right: 43.89%;
+    bottom: 60.74%;
+    left: 38.62%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.descriptions1 {
+    position: absolute;
+    top: 164.01px;
+    left: calc(50% - 84px);
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    width: 168px;
+    height: 29.8px;
+}
+.descriptions {
+    width: 378px;
+    position: relative;
+    height: 375.2px;
+}
+.hai-can-give {
+    position: absolute;
+    top: 212.94px;
+    left: calc(50% - 147px);
+    white-space: pre-wrap;
+    display: inline-block;
+    width: 286px;
+    height: 79.4px;
+}
+.treatment1 {
+    position: absolute;
+    top: 166.28px;
+    left: calc(50% - 67px);
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    width: 114px;
+    height: 29.8px;
+}
+.treatment-icon {
+    position: absolute;
+    height: 19.19%;
+    width: 22.75%;
+    top: 19.99%;
+    right: 41.27%;
+    bottom: 60.82%;
+    left: 35.98%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.dont-worry-hai {
+    position: absolute;
+    top: 212.01px;
+    left: calc(50% - 143px);
+    display: inline-block;
+    width: 286px;
+    height: 79.4px;
+}
+.diets-workout1 {
+    position: absolute;
+    top: 164.01px;
+    left: calc(50% - 91px);
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    text-align: left;
+    display: inline-block;
+    width: 183px;
+    height: 30px;
+}
+.diets-icon {
+    position: absolute;
+    top: 69.01px;
+    left: 153px;
+    width: 73px;
+    height: 69px;
+}
+.hai-information {
+    position: absolute;
+    top: 1569.99px;
+    left: 248px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 59px;
+    text-align: center;
+    font-size: 16px;
+    color: #757575;
+}
+.hai-descrption-icon-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 30px;
+    background-color: #01579b;
+    width: 599px;
+    height: 132px;
+}
+.meet-hai-the {
+    position: absolute;
+    top: 30px;
+    left: 44px;
+    line-height: 141.5%;
+    font-weight: 500;
+    display: inline-block;
+    width: 610px;
+    height: 137px;
+}
+.hai-descrption-icon {
+    width: 654px;
+    position: relative;
+    height: 167px;
+}
+.ask-hai-of {
+    width: 565px;
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    display: inline-block;
+    height: 109px;
+    flex-shrink: 0;
+}
+.hai-description {
+    position: absolute;
+    top: 1388px;
+    left: 248px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    font-size: 48px;
+}
+.helping-people-with {
+    width: 814px;
+    position: relative;
+    line-height: 100.69%;
+    font-family: Adamina;
+    display: inline-block;
+    height: 141px;
+    flex-shrink: 0;
+}
+.find-book-apoinment {
+    position: relative;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+}
+.rectangle20 {
+    position: absolute;
+    top: 0px;
+    left: 165px;
+    box-shadow: 0px 40px 246px rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(89px); */
+    border-radius: 54px;
+    background: linear-gradient(180deg, #2e7d32, #01579b);
+    border: 1px solid #303030;
+    box-sizing: border-box;
+    width: 1103px;
+    height: 698px;
+    opacity: 0.75;
+    mix-blend-mode: normal;
+}
+.mask-group-icon {
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 534.5px);
+    width: 1050px;
+    height: 640px;
+    border-radius: 54px;
+    border: 1px solid #303030;
+}
+
+.rectangle21 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: -11px 13px 120px rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(53px); */
+    border-radius: 63px;
+    background-color: #1e232f;
+    width: 318px;
+    height: 124px;
+}
+.assiting-you-with {
+    position: absolute;
+    top: 34px;
+    left: 55px;
+    display: inline-block;
+    width: 209px;
+}
+.about-desc {
+    position: absolute;
+    top: 436px;
+    left: 1131px;
+    width: 318px;
+    height: 124px;
+}
+.helping-you-with {
+    margin: 0;
+}
+.helping-you-with-container {
+    position: absolute;
+    top: 34px;
+    left: 16px;
+}
+.about-desc1 {
+    position: absolute;
+    top: 221px;
+    left: 0px;
+    width: 318px;
+    height: 124px;
+}
+.about-video {
+    width: 1449px;
+    position: relative;
+    height: 698px;
+    font-size: 22px;
+}
+.about {
+    position: absolute;
+    top: 178px;
+    left: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 54px;
+    text-align: center;
+    font-size: 56.79px;
+}
+.one-helpful {
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+}
+.helpful-ai {
+    position: relative;
+    font-weight: 500;
+}
+.rectangle23 {
+    position: absolute;
+    top: 0px;
+    left: 583px;
+    border-radius: 32px;
+    background-color: #fff;
+    width: 141px;
+    height: 51.3px;
+    transition: background-color 0.3s ease;
+}
+.rectangle23:hover {
+    background-color: #01579b;
+}
+.search {
+    position: absolute;
+    top: 13.45px;
+    left: 625px;
+    font-weight: 500;
+    display: inline-block;
+    width: 87px;
+    height: 14.4px;
+}
+.rectangle24 {
+    position: absolute;
+    top: 0px;
+    left: calc(55% - 10px);
+    /* backdrop-filter: blur(29px); */
+    border-radius: 31.5px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    box-sizing: border-box;
+    width: 564px;
+    height: 50.5px;
+}
+.search-disease-hospitals {
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 250px);
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    display: inline-block;
+    width: 280px;
+    height: 18.4px;
+    opacity: 0.6;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+}
+.search-bar {
+    width: 724px;
+    position: relative;
+    height: 51.3px;
+    font-size: 20px;
+    color: #303030;
+}
+.navbar-lex {
+    position: absolute;
+    top: 34px;
+    left: 61px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 93px;
+    font-size: 24px;
+}
+.landing-page {
+    width: 100%;
+    position: relative;
+    background-color: #303030;
+    height: 6406px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 60px;
+    color: #fff;
+    font-family: Outfit;
+}
+
+#loading .spinner-border {
+    display: block !important;
+    width: 3rem;
+    height: 3rem;
+}

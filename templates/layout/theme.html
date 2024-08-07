@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Helpful - {% block title %}{% endblock %}</title>
+
+    {% block style %}
+    {% endblock %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Adamina:wght@400&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Advent Pro:wght@500;600;700&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" />
+</head>
+<body>
+    {% include 'components/navbar.html' %}
+
+    <div class="landing-page">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Confirmation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Delete Patient</h1>
+        <p>Are you sure you want to delete the following patient?</p>
+        <p><strong>ID:</strong> {{ patient.patient_id }}</p>
+        <p><strong>Name:</strong> {{ patient.name }}</p>
+        <p><strong>Date of Birth:</strong> {{ patient.date_of_birth }}</p>
+        <p><strong>Gender:</strong> {{ patient.gender }}</p>
+        <p><strong>Medical Conditions:</strong> {{ patient.medical_conditions }}</p>
+        <p><strong>Medications:</strong> {{ patient.medications }}</p>
+        <p><strong>Allergies:</strong> {{ patient.allergies }}</p>
+        <p><strong>Last Appointment Date:</strong> {{ patient.last_appointment_date }}</p>
+        <p><strong>Warning:</strong> This action cannot be undone.</p>
+        <br><p>Do you want to delete?</p></br>        
+        <form action="/confirm_delete/{{ patient._id }}" method="POST">
+            <button type="submit" class="btn btn-danger">Confirm Delete</button>
+            <a href="/information?action=list" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>

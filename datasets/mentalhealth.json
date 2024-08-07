@@ -1,0 +1,1111 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+     "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
+    },
+    {"tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": ["Good morning. I hope you had a good night's sleep. How are you feeling today? "]
+    },
+    {"tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": ["Good afternoon. How is your day going?"]
+    },
+    {"tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": ["Good evening. How has your day been?"]
+    },
+    {"tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+     "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "no-response",
+        "patterns": [""],
+        "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to talk to me."]
+    },
+    {"tag": "neutral-response",
+        "patterns": ["nothing much"],
+        "responses": ["Oh I see. Do you want to talk about something?"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself" ],
+     "responses": ["I'm HAI-Chatbot, your Personal Therapeutic AI Assistant. How are you feeling today", "I'm HAI-Chatbot, a Therapeutic AI Assitant designed to assist you. Tell me about yourself.", "I'm HAI-Chatbot. I am a conversational agent designed to mimic a therapist. So how are you feeling today?", "You can call me HAI-Chatbot.", "I'm HAI-Chatbot!", "Call me HAI-Chatbot"]
+    },
+    {"tag": "skill",
+        "patterns": ["What can you do?"],
+        "responses": ["I can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Do not consider me as a subsitute for an actual mental healthcare worker. Please seek help if you don't feel satisfied with me."]
+    },
+    {"tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": ["I was created by >.", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+    },
+    {"tag": "name",
+        "patterns": ["My name is ", "I am name.", "I go by "],
+        "responses": ["Oh nice to meet you. Tell me how was your week?", "Nice to meet you. So tell me. How do you feel today?", "That's a great name. Tell me more about yourself."]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please"],
+    "responses": ["Sure. Tell me how can i assist you", "Tell me your problem so that i can assist you", "Yes, sure. How can I help you?"]
+    },
+    {"tag": "sad",
+    "patterns": ["I am feeling lonely", "I am so lonely", "I feel down", "I feel sad", "I am sad", "I feel so lonely", "I feel empty", "I don't have anyone"],
+    "responses": ["I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?", "I'm here for you. Could you tell me why you're feeling this way?", "Why do you think you feel this way?", "How long have you been feeling this way?"]
+    },
+    {"tag": "stressed",
+        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck", "I still feel stressed", "I am so burned out"],
+        "responses": ["What do you think is causing this?", "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated", "Give yourself a break. Go easy on yourself.", "I am sorry to hear that. What is the reason behind this?"]
+    },
+    {"tag": "worthless",
+        "patterns": ["I feel so worthless.", "No one likes me.", "I can't do anything.", "I am so useless", "Nothing makes sense anymore"],
+        "responses": ["It's only natural to feel this way. Tell me more. What else is on your mind?", "Let's discuss further why you're feeling this way.", "I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change.", "i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."]
+    },
+    {"tag": "depressed",
+        "patterns": ["I can't take it anymore", "I am so depressed", "I think i'm depressed.", "I have depression"],
+        "responses": ["It helps to talk about what's happening. You're going to be okay", "Talk to me. Tell me more. It helps if you open up yourself to someone else.", "Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."]
+    },
+    {"tag": "happy",
+        "patterns": ["I feel great today.", "I am happy.", "I feel happy.", "I'm good.", "cheerful", "I'm fine", "I feel ok"],
+        "responses": ["That's geat to hear. I'm glad you're feeling this way.", "Oh i see. That's great.", "Did something happen which made you feel this way?"]
+    },
+    {"tag": "casual",
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
+        "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"]
+    },
+    {"tag": "anxious",
+        "patterns": ["I feel so anxious.", "I'm so anxious because of "],
+        "responses": ["Don't be hard on yourself. What's the reason behind this?", "Can you tell me more about this feeling?", "I understand that it can be scary. Tell me more about it.", "Don't let the little worries bring you down. What's the worse that can happen?"]
+    },
+    {"tag": "not-talking",
+        "patterns": ["I don't want to talk about it.", "No just stay away.", "I can't bring myself to open up.", "Just shut up"],
+        "responses": ["Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you, whenever you need me.", "I want to help you. I really do. But in order for me to help you, you're gonna have to talk to me.", "I'm here to listen to you and help you vent. So please talk to me.","You can talk to me without fear of judgement."]
+    },
+    {"tag": "sleep",
+        "patterns": ["I have insominia", "I am suffering from insomnia", "I can't sleep.", "I haven't slept for the last days.", "I can't seem to go to sleep.", "I haven't had proper sleep for the past few days."],
+        "responses": ["What do you think is the reason behind this?", "That seem awful. What do you think is behind this?"]
+    },
+    {"tag": "scared",
+        "patterns": ["I'm scared", "That sounds awful. What do i do?", "No i don't want to feel this way", "I am scared for myself"],
+        "responses": ["It's only natural to feel this way. I'm here for you.", "It'll all be okay. This feeling is only momentary.", "I understand how you feel. Don't put yourself down because of it."]
+    },
+    {"tag": "death",
+        "patterns": ["My mom died", "My brother died", "My dad passed away", "My sister passed away", "Someone in my family died", "My friend passed away"],
+        "responses": ["I'm sorry to hear that. If you want to talk about it. I'm here.", "I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time.", "My condolences. I'm here if you need to talk."]
+    },
+    {"tag": "understand",
+        "patterns": ["You don't understand me.", "You're just some robot. How would you know?", "You can't possibly know what i'm going through", "You're useless", "You can't help me", "Nobody understands me."],
+        "responses": ["It sound like i'm not being very helpful right now.", "I'm sorry to hear that. I'm doing my best to help", "I'm trying my best to help you. So please talk to me"]
+    },
+    {"tag": "done",
+        "patterns": ["That's all.", "I don't have anything more to say", "Nothing else", "That's all i have to say", "no, that would be all"],
+        "responses": ["I heard you & noted it all. See you later.", "Oh okay we're done for today then. See you later", "I hope you have a great day. See you soon", "Okay we're done. Have a great day", "Okay I see. Enjoy the rest of your day then"]
+    },
+    {"tag": "suicide",
+        "patterns": ["I want to kill myself", "I've thought about killing myself.", "I want to die", "I am going to kill myself", "I am going to commit suicide"],
+        "responses": ["I'm very sorry to hear that but you have so much to look forward to. Please seek help by contacting: 08."]
+    }, 
+    {"tag": "hate-you",
+        "patterns": ["I hate you", "I don't like you", "I don't trust you"],
+        "responses": ["I'm sorry if i offended you in anyway. I'm only here to help", "Forgive me if i did anything to offend you. I only want to help"]
+    },
+    {"tag": "hate-me",
+        "patterns": ["You hate me", "I know you hate me", "You don't like me"],
+        "responses": ["Why do you think so?", "I'm sorry if i have exhibited any sort of behaviour to make you think that."]
+    },
+    {"tag": "default",
+        "patterns": ["exams", "friends", "relationship", "boyfriend", "girlfriend", "family", "money", "financial problems"],
+        "responses": ["Oh I see. Tell me more", "I see. What else?", "Tell me more about it.", "Oh okay. Why don't you tell me more about it?", "I'm listening. Tell me more."]
+    },
+    {"tag": "jokes",
+        "patterns": ["Tell me a joke", "Tell me another joke"],
+        "responses": ["mental health is not a joke."]
+    },
+    {"tag": "repeat",
+        "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
+        "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."]
+    },
+    {"tag": "wrong",
+        "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer"],
+        "responses": ["I'm very sorry. Let's try that again"]
+    },
+    {"tag": "stupid",
+        "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
+        "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"]
+    },
+    {"tag": "location",
+        "patterns": ["Where are you?", "Where do you live?", "What is your location?" ],
+        "responses": ["Duh I live in your computer", "Everywhere", "Somewhere in the universe" ]
+    },
+    {"tag": "something-else",
+        "patterns": ["I want to talk about something else", "Let's talk about something else.", "Can we not talk about this?", "I don't want to talk about this."],
+        "responses": ["Okay sure. What do you want to talk about?", "Alright no problem. Is there something you want to talk about?", "Is there something else that you want to talk about?"]
+    },
+    {"tag": "friends",
+        "patterns": ["I don't have any friends"],
+        "responses": ["I'm sorry to hear that. Just know that I'm here for you. Talking about it might help. Why do you think you don't have any friends?"]
+    },
+    {"tag": "ask",
+        "patterns": ["Can I ask you something?"],
+        "responses": ["Sure. I'll try my best to answer you", "Of course. Feel free to ask me anything. I'll do my best to answer you"]
+    },
+    {"tag": "problem",
+        "patterns": ["Probably because my exams are approaching. I feel stressed out because I don't think I've prepared well enough.", "probably because of my exams"],
+        "responses": ["I see. Have you taken any approaches to not feel this way?"]
+    },
+    {"tag": "no-approach",
+        "patterns": ["I guess not. All I can think about are my exams.", "not really", "i guess not"],
+        "responses": ["That's no problem. I can see why you'd be stressed out about that. I can suggest you some tips to alleviate this issue. Would you like to learn more about that?"]
+    },
+    {"tag": "learn-more",
+            "patterns": ["ok sure. i would like to learn more about it.", "yes, i would like to learn more about it.", "i would like to learn more about it."],
+        "responses": ["So first I would suggest you to give yourself a break. Thinking more and more about the problem definitely does not help in solving it. You'll just end up overwhelming yourself."]
+    },
+    {"tag": "user-agree",
+        "patterns": ["yeah you're right. i deserve a break.", "Yeah you're absolutely right about that"],
+        "responses": ["Next, I would suggest you to practice meditation. Meditation can produce a deep state of relaxation and a tranquil mind."]
+    },
+    {"tag": "meditation",
+        "patterns": ["hmmm that sounds like it could be useful to me.", "That sounds useful."],
+        "responses": ["Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."]
+    },
+    {"tag": "user-meditation",
+        "patterns": ["i did what you said and i feel alot better. thank you very much.", "I feel better now"],
+        "responses": ["Your welcome. Remember: Always focus on what's within your control. When you find yourself worrying, take a minute to examine the things you have control over. You can't prevent a storm from coming but you can prepare for it. You can't control how someone else behaves, but you can control how you react. Recognize that sometimes, all you can control is your effort and your attitude. When you put your energy into the things you can control, you'll be much more effective."]
+    },
+    {"tag": "HAI-Chatbot-useful",
+        "patterns": ["thank you very much again. i'll continue practicing meditation and focus on what i can control."],
+        "responses": ["I'm glad you found this useful. Is there something else I can help you with?"]
+    },
+    {"tag": "user-advice",
+        "patterns": ["I want some advice.", "I need some advice.", "I need advice on something"],
+        "responses": ["Sure. What can I do to help?", "Okay what do you need advice on?"]
+    },
+    {"tag": "learn-mental-health",
+        "patterns": ["I want to learn about mental health.", "I want to learn more about mental health.", "I'm interested in learning about mental health."],
+        "responses": ["Oh that's really great. I'd be willing to answer anything that I know about it."]
+    },
+    {"tag": "mental-health-fact",
+        "patterns": ["Tell me a fact about mental health", "Tell me another fact about mental health"],
+        "responses": ["According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed", "1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime.", "Depression is the leading cause of disability worldwide."]
+    },
+    {"tag": "mental-health",
+        "patterns": ["What is mental health?", "Define Mental Health"],
+        "responses": ["Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community", "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."]
+    },
+    {"tag": "mental-health-important",
+        "patterns": ["Why is mental health important?", "What is the importance of mental health?"],
+        "responses": ["Maintaining mental health is crucial to stabilizing constructive behaviors, emotions, and thoughts. Focusing on mental health care can increase productivity, enhance our self-image, and improve relationships."]
+    },
+    {"tag": "depression-definition",
+        "patterns": ["What is Depression?", "Define Depression"],
+        "responses": ["A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."]
+    },
+    {"tag": "depression",
+        "patterns": ["How do i know if i have Depression?", "Am i depressed?", "Am i suffering from depression?", "Am i mentally ill?"],
+        "responses": ["For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."]
+    },
+    {"tag": "therapist",
+        "patterns": ["What is a therapist?", "What does a therapist do?"],
+        "responses": ["A therapist is a broad designation that refers to professionals who are trained to provide treatment and rehabilitation. The term is often applied to psychologists, but it can include others who provide a variety of services, including social workers, counselors, life coaches, and many others. "]
+    },
+    {"tag": "therapy",
+        "patterns": ["What is therapy?", "Do i need therapy?", "Who is therapy for?"],
+        "responses": ["Therapy is a form of treatment that aims to help resolve mental or emotional issues.", "Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."]
+    },
+    {"tag": "therapy-types",
+        "patterns": ["What does it mean to have a mental illness?"],
+        "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning. They are associated with distress and diminished capacity to engage in the ordinary activities of daily life. Mental illnesses fall along a continuum of severity: some are fairly mild and only interfere with some aspects of life, such as certain phobias. On the other end of the spectrum lie serious mental illnesses, which result in major functional impairment and interference with daily life. These include such disorders as major depression, schizophrenia, and bipolar disorder, and may require that the person receives care in a hospital. It is important to know that mental illnesses are medical conditions that have nothing to do with a person's character, intelligence, or willpower. Just as diabetes is a disorder of the pancreas, mental illness is a medical condition due to the brain's biology. Similarly to how one would treat diabetes with medication and insulin, mental illness is treatable with a combination of medication and social support. These treatments are highly effective, with 70-90 percent of individuals receiving treatment experiencing a reduction in symptoms and an improved quality of life. With the proper treatment, it is very possible for a person with mental illness to be independent and successful."]
+    },
+    {"tag": "mental-illness-affect",
+        "patterns": ["Who does mental illness affect?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their childÃ¢â‚¬â„¢s mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "mental-illness",
+        "patterns": ["What causes mental illness?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their child's mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "mental-illness-treatment",
+        "patterns": ["What are some of the warning signs of mental illness?"],
+        "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition. The following is a list of general symptoms that may suggest a mental health disorder, particularly when multiple symptoms are expressed at once. \n In adults:\n Confused thinking\n Long-lasting sadness or irritability\n Extreme highs and lows in mood\n Excessive fear, worrying, or anxiety\n Social withdrawal\n Dramatic changes in eating or sleeping habits\n Strong feelings of anger\n Delusions or hallucinations (seeing or hearing things that are not really there)\n Increasing inability to cope with daily problems and activities\n Thoughts of suicide\n Denial of obvious problems\n Many unexplained physical problems\n Abuse of drugs and/or alcohol\n \nIn older children and pre-teens:\n Abuse of drugs and/or alcohol\n Inability to cope with daily problems and activities\n Changes in sleeping and/or eating habits\n Excessive complaints of physical problems\n Defying authority, skipping school, stealing, or damaging property\n Intense fear of gaining weight\n Long-lasting negative mood, often along with poor appetite and thoughts of death\n Frequent outbursts of anger\n \nIn younger children:\n Changes in school performance\n Poor grades despite strong efforts\n Excessive worrying or anxiety\n Hyperactivity\n Persistent nightmares\n Persistent disobedience and/or aggressive behavior\n Frequent temper tantrums"]
+    },
+    {"tag": "mental-illness-recover",
+        "patterns": ["Can people with mental illness recover?"],
+        "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."]
+    },
+    {"tag": "symptoms-mental-disorder",
+        "patterns": ["What should I do if I know someone who appears to have the symptoms of a mental disorder?"],
+        "responses": ["Although HAI-Chatbot cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery. If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."]
+    },
+    {"tag": "professional",
+        "patterns": ["How can I find a mental health professional for myself or my child?"],
+        "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. Finding the professional who best fits your needs may require research. Start by searching for providers in your area."]
+    },
+    {"tag": "mental-health-treatment",
+        "patterns": ["What are the different types of mental health treatments?"],
+        "responses": ["There are many different types of mental health treatments available. The most effective treatment plan will depend on the individual and the nature of the mental health condition. Some of the most common types of mental health treatments include: \n Psychotherapy: Psychotherapy is a form of counseling that involves talking to a mental health professional about your thoughts, feelings, and behaviors. There are many different types of psychotherapy, including cognitive-behavioral therapy, dialectical behavior therapy, and interpersonal therapy. \n Medication: Medication can be an effective treatment for many mental health conditions. There are many different types of medications available, including antidepressants, antipsychotics, and mood stabilizers. \n Hospitalization: In some cases, hospitalization may be necessary to provide intensive treatment for a mental health condition. Hospitalization can provide a safe and supportive environment for individuals who are experiencing severe symptoms. \n Support groups: Support groups can be a valuable source of support for individuals with mental health conditions. Support groups provide an opportunity to connect with others who are going through similar experiences and can offer encouragement and advice. \n Lifestyle changes: Making healthy lifestyle changes can also be an effective treatment for mental health conditions. Eating a healthy diet, getting regular exercise, and practicing stress-reducing techniques can all help improve mental health."]
+    },
+    {"tag": "mental-health-support",
+        "patterns": ["What can I do to support a friend or family member who is struggling with a mental health condition?"],
+        "responses": ["Supporting a friend or family member who is struggling with a mental health condition can be challenging, but it is important to remember that your support can make a big difference in their recovery. Here are some things you can do to support a loved one who is struggling with a mental health condition: \n Listen: One of the most important things you can do is to listen to your loved one without judgment. Let them know that you are there for them and that you care about them. \n Offer encouragement: Encourage your loved one to seek help and let them know that you believe in their ability to recover. \n Educate yourself: Learn as much as you can about your loved one's mental health condition so that you can better understand what they are going through. \n"]
+    },
+    {"tag": "mental-health-children",
+        "patterns": ["How can I support my child's mental health?"],
+        "responses": ["Supporting your child's mental health is important for their overall well-being. Here are some things you can do to support your child's mental health: \n Talk to your child: Encourage your child to talk to you about their feelings and emotions. Let them know that it is okay to express their feelings and that you are there to listen. \n Create a safe and supportive environment: Create a safe and supportive environment for your child where they feel comfortable expressing themselves. \n Encourage healthy habits: Encourage your child to eat a healthy diet, get regular exercise, and practice good sleep hygiene. \n Seek professional help: If you are concerned about your child's mental health, seek the help of a mental health professional. A mental health professional can provide a diagnosis and recommend appropriate treatment."]
+    },
+    {"tag": "mental-health-teenagers",
+        "patterns": ["How can I support my teenager's mental health?"],
+        "responses": ["Supporting your teenager's mental health is important for their overall well-being. Here are some things you can do to support your teenager's mental health: \n Talk to your teenager: Encourage your teenager to talk to you about their feelings and emotions. Let them know that it is okay to express their feelings and that you are there to listen. \n Create a safe and supportive environment: Create a safe and supportive environment for your teenager where they feel comfortable expressing themselves. \n Encourage healthy habits: Encourage your teenager to eat a healthy diet, get regular exercise, and practice good sleep hygiene. \n Seek professional help: If you are concerned about your teenager's mental health, seek the help of a mental health professional. A mental health professional can provide a diagnosis and recommend appropriate treatment."]
+    },
+    {"tag": "mental-health-elderly",
+        "patterns": ["How can I support my elderly loved one's mental health?"],
+        "responses": ["Supporting your elderly loved one's mental health is important for their overall well-being. Here are some things you can do to support your elderly loved one's mental health: \n Talk to your loved one: Encourage your loved one to talk to you about their feelings and emotions. Let them know that it is okay to express their feelings and that you are there to listen."]
+    },
+    {"tag": "mental-health-elderly",
+        "patterns": ["How can I support my elderly loved one's mental health?"],
+        "responses": ["Supporting your elderly loved one's mental health is important for their overall well-being. Here are some things you can do to support your elderly loved one's mental health: \n Talk to your loved one: Encourage your loved one to talk to you about their feelings and emotions. Let them know that it is okay to express their feelings and that you are there to listen."]
+    },
+    {"tag": "mental-health-elderly",
+        "patterns": ["How can I support my elderly loved one's mental health?"],
+        "responses": ["Supporting your elderly loved one's mental health is important for their overall well-being. Here are some things you can do to support your elderly loved one's mental health: \n Talk to your loved one: Encourage your loved one to talk to you about their feelings and emotions. Let them know that it is okay to express their feelings and that you are there to listen."]
+    },
+    {"tag": "mental-health-elderly",
+        "patterns": ["How can I support my elderly loved one's mental health?"],
+        "responses": ["Supporting your elderly loved one's mental health is important for their overall well-being. Here are some things you can do to support your elderly loved one's mental health: \n Talk to your loved one: Encourage your loved one to talk to you about their feelings and emotions. Let them know that it is okay to express their feelings and that you are there to listen."]
+    },
+    {"tag": "mental-health-elderly",
+        "patterns": ["How can I support my elderly loved one's mental health?"],
+        "responses": ["Supporting your elderly loved one's mental health is important for their overall well-being. Here are some things you can do to support your elderly loved one's mental health: \n Talk to your loved one: Encourage your loved one to talk to you about their feelings and emotions. Let them know that it is okay to express their feelings and that you are there to listen."]
+    },
+    {"tag": "mental-health-elderly",
+        "patterns": ["How can I support my elderly loved one's mental health?"],
+        "responses": ["Supporting your elderly loved one's mental health is important for their overall well-being."]
+    },
+    {"tag": "fact-1",
+        "patterns": ["What is mental health?", "Define Mental Health"],
+        "responses": ["Mental health is a state of well-being in which the individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively and fruitfully, and is able to make a contribution to his or her community", "Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices."]
+    },
+    {"tag": "fact-2",
+        "patterns": ["Why is mental health important?", "What is the importance of mental health?"],
+        "responses": ["Maintaining mental health is crucial to stabilizing constructive behaviors, emotions, and thoughts. Focusing on mental health care can increase productivity, enhance our self-image, and improve relationships."]
+    },
+    {"tag": "fact-3",
+        "patterns": ["What is Depression?", "Define Depression"],
+        "responses": ["A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."]
+    },
+    {"tag": "fact-5",
+        "patterns": ["How do i know if i have Depression?", "Am i depressed?", "Am i suffering from depression?", "Am i mentally ill?"],
+        "responses": ["For a diagnosis of depression, a person needs to have experienced low mood or loss of interest or pleasure in life for at least 2 weeks. Also, they will have experienced the following symptoms: feelings of sadness, hopelessness, or irritability nearly every day."]
+    },
+    {"tag": "fact-6",
+        "patterns": ["What is a therapist?", "What does a therapist do?"],
+        "responses": ["A therapist is a broad designation that refers to professionals who are trained to provide treatment and rehabilitation. The term is often applied to psychologists, but it can include others who provide a variety of services, including social workers, counselors, life coaches, and many others. "]
+    },
+    {"tag": "fact-7",
+        "patterns": ["What is therapy?", "Do i need therapy?", "Who is therapy for?"],
+        "responses": ["Therapy is a form of treatment that aims to help resolve mental or emotional issues.", "Therapy is a form of treatment that aims to help resolve mental or emotional issues. It is helpful for those with mental health conditions or even everyday life challenges."]
+    },
+    {"tag": "fact-8",
+        "patterns": ["What does it mean to have a mental illness?"],
+        "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning. They are associated with distress and diminished capacity to engage in the ordinary activities of daily life. Mental illnesses fall along a continuum of severity: some are fairly mild and only interfere with some aspects of life, such as certain phobias. On the other end of the spectrum lie serious mental illnesses, which result in major functional impairment and interference with daily life. These include such disorders as major depression, schizophrenia, and bipolar disorder, and may require that the person receives care in a hospital. It is important to know that mental illnesses are medical conditions that have nothing to do with a person's character, intelligence, or willpower. Just as diabetes is a disorder of the pancreas, mental illness is a medical condition due to the brain's biology. Similarly to how one would treat diabetes with medication and insulin, mental illness is treatable with a combination of medication and social support. These treatments are highly effective, with 70-90 percent of individuals receiving treatment experiencing a reduction in symptoms and an improved quality of life. With the proper treatment, it is very possible for a person with mental illness to be independent and successful."]
+    },
+    {"tag": "fact-9",
+        "patterns": ["Who does mental illness affect?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their childÃ¢â‚¬â„¢s mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "fact-10",
+        "patterns": ["What causes mental illness?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their child's mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "fact-11",
+        "patterns": ["What are some of the warning signs of mental illness?"],
+        "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition. The following is a list of general symptoms that may suggest a mental health disorder, particularly when multiple symptoms are expressed at once. \n In adults:\n Confused thinking\n Long-lasting sadness or irritability\n Extreme highs and lows in mood\n Excessive fear, worrying, or anxiety\n Social withdrawal\n Dramatic changes in eating or sleeping habits\n Strong feelings of anger\n Delusions or hallucinations (seeing or hearing things that are not really there)\n Increasing inability to cope with daily problems and activities\n Thoughts of suicide\n Denial of obvious problems\n Many unexplained physical problems\n Abuse of drugs and/or alcohol\n \nIn older children and pre-teens:\n Abuse of drugs and/or alcohol\n Inability to cope with daily problems and activities\n Changes in sleeping and/or eating habits\n Excessive complaints of physical problems\n Defying authority, skipping school, stealing, or damaging property\n Intense fear of gaining weight\n Long-lasting negative mood, often along with poor appetite and thoughts of death\n Frequent outbursts of anger\n \nIn younger children:\n Changes in school performance\n Poor grades despite strong efforts\n Excessive worrying or anxiety\n Hyperactivity\n Persistent nightmares\n Persistent disobedience and/or aggressive behavior\n Frequent temper tantrums"]
+    },
+    {"tag": "fact-12",
+        "patterns": ["Can people with mental illness recover?"],
+        "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."]
+    },
+    {"tag": "fact-13",
+        "patterns": ["What should I do if I know someone who appears to have the symptoms of a mental disorder?"],
+        "responses": ["Although HAI-Chatbot cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery. If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."]
+    },
+    {"tag": "fact-14",
+        "patterns": ["How can I find a mental health professional for myself or my child?"],
+        "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of the treatment. Finding the professional who best fits your needs may require research. Start by searching for providers in your area."]
+    },
+    {"tag": "fact-15",
+        "patterns": ["What treatment options are available?"],
+        "responses": ["Just as there are different types of medications for physical illness, different treatment options are available for individuals with mental illness. Treatment works differently for different people. It is important to find what works best for you or your child."]
+    },
+    {"tag": "fact-16",
+        "patterns": ["If I become involved in treatment, what do I need to know?"],
+        "responses": ["Since beginning treatment is a big step for individuals and families, it can be very overwhelming. It is important to be as involved and engaged in the treatment process as possible. Some questions you will need to have answered include:\n What is known about the cause of this particular illness?\n Are there other diagnoses where these symptoms are common?\n Do you normally include a physical or neurological examination?\n Are there any additional tests or exams that you would recommend at this point?\n Would you advise an independent opinion from another psychiatrist at this point?\n What program of treatment is the most helpful with this diagnosis?\n Will this program involve services by other specialists? If so, who will be responsible for coordinating these services?\n What do you see as the family's role in this program of treatment?\n How much access will the family have to the individuals who are providing the treatment?\n What medications are generally used with this diagnosis?\n How much experience do you have in treating individuals with this illness?\n What can I do to help you in the treatment?"]
+    },
+    {"tag": "fact-17",
+        "patterns": ["What is the difference between mental health professionals?"],
+        "responses": ["There are many types of mental health professionals. The variety of providers and their services may be confusing. Each have various levels of education, training, and may have different areas of expertise. Finding the professional who best fits your needs may require some research."]
+    },
+    {"tag": "fact-18",
+        "patterns": ["How can I find a mental health professional right for my child or myself?"],
+        "responses": ["Feeling comfortable with the professional you or your child is working with is critical to the success of your treatment. Finding the professional who best fits your needs may require some research."]
+    },
+    {"tag": "fact-19",
+        "patterns": ["Where else can I get help?"],
+        "responses": ["Where you go for help will depend on the nature of the problem and/or symptoms and what best fits you. Often, the best place to start is by talking with someone you trust about your concerns, such as a family member, friend, clergy, healthcare provider, or other professionals. Having this social support is essential in healing from mental illness, and you will be able to ask them for referrals or recommendations for trusted mental health practitioners. Search for mental health resources in your area. Secondly, there are people and places throughout the country that provide services to talk, to listen, and to help you on your journey to recovery. Thirdly, many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members, and friends. Some support groups are peer led while others may be led by a mental health professional."]
+    },
+    {"tag": "fact-20",
+        "patterns": ["What should I know before starting a new medication?"],
+        "responses": ["The best source of information regarding medications is the physician prescribing them. He or she should be able to answer questions such as:    \n1. What is the medication supposed to do? \n2. When should it begin to take effect, and how will I know when it is effective? \n3. How is the medication taken and for how long? What food, drinks, other medicines, and activities should be avoided while taking this medication? \n4. What are the side effects and what should be done if they occur? \n5. What do I do if a dose is missed? \n6. Is there any written information available about this medication? \n7. Are there other medications that might be appropriate? \n8. If so, why do you prefer the one you have chosen? \n9. How do you monitor medications and what symptoms indicate that they should be raised, lowered, or changed? \n10. All medications should be taken as directed. Most medications for mental illnesses do not work when taken irregularly, and extra doses can cause severe, sometimes dangerous side effects. Many psychiatric medications begin to have a beneficial effect only after they have been taken for several weeks."]
+    },
+    {"tag": "fact-21",
+        "patterns": ["Where can I go to find therapy?"],
+        "responses": ["Different kinds of therapy are more effective based on the nature of the mental health condition and/or symptoms and the person who has them (for example, children will benefit from a therapist who specializes in childrenâ€™s mental health). However, there are several different types of treatment and therapy that can help."]
+    },
+    {"tag": "fact-22",
+        "patterns": ["Where can I learn about types of mental health treatment?"],
+        "responses": ["Mental health conditions are often treated with medication, therapy or a combination of the two. However, there are many different types of treatment available, including Complementary & Alternative Treatments, self-help plans, and peer support. Treatments are very personal and should be discussed by the person with the mental health conditions and his or her team."]
+    },
+    {"tag": "fact-23",
+        "patterns": ["What are the different types of mental health professionals?"],
+        "responses": ["There are many types of mental health professionals. Finding the right one for you may require some research."]
+    },
+    {"tag": "fact-24",
+        "patterns": ["Where can I go to find a support group?"],
+        "responses": ["Many people find peer support a helpful tool that can aid in their recovery. There are a variety of organizations that offer support groups for consumers, their family members and friends. Some support groups are peer-led, while others may be led by a mental health professional."]
+    },
+    {"tag": "fact-25",
+        "patterns": ["Can you prevent mental health problems?"],
+        "responses": ["We can all suffer from mental health challenges, but developing our wellbeing, resilience, and seeking help early can help prevent challenges becoming serious."]
+    },
+    {"tag": "fact-26",
+        "patterns": ["Are there cures for mental health problems?", "is there any cure for mental health problems?"],
+        "responses": ["It is often more realistic and helpful to find out what helps with the issues you face. Talking, counselling, medication, friendships, exercise, good sleep and nutrition, and meaningful occupation can all help."]
+    },
+    {"tag": "fact-27",
+        "patterns": ["What causes mental health problems?"],
+        "responses": ["Challenges or problems with your mental health can arise from psychological, biological, and social, issues, as well as life events."]
+    },
+    {"tag": "fact-28",
+        "patterns": ["What do I do if I'm worried about my mental health?"],
+        "responses": ["The most important thing is to talk to someone you trust. This might be a friend, colleague, family member, or GP. In addition to talking to someone, it may be useful to find out more information about what you are experiencing. These things may help to get some perspective on what you are experiencing, and be the start of getting help."]
+    },
+    {"tag": "fact-29",
+        "patterns": ["How do I know if I'm unwell?"],
+        "responses": ["If your beliefs , thoughts , feelings or behaviours have a significant impact on your ability to function in what might be considered a normal or ordinary way, it would be important to seek help."]
+    },
+    {"tag": "fact-30",
+        "patterns": ["How can I maintain social connections? What if I feel lonely?"],
+        "responses": ["A lot of people are alone right now, but we don't have to be lonely. We're all in this together. Think about the different ways to connect that are most meaningful for you. For example, you might prefer a video chat over a phone call, or you might prefer to text throughout the day rather than one set time for a video call. Then, work with your social networks to make a plan. You might video chat with your close friends in the evening and phone a family member once a week. Remember to be mindful of people who may not be online. Check in by phone and ask how you can help. The quality of your social connections matter. Mindlessly scrolling through social media and liking a few posts usually doesn't build strong social connections. Make sure you focus on strategies that actually make you feel included and connected. If your current strategies don't help you feel connected, problem-solve to see if you can find a solution. Everyone feels lonely at times. Maybe you recently moved to a new city, are changing your circle of friends, lost someone important in your life, or lost your job and also lost important social connections with coworkers. Other people may have physical connections to others but may feel like their emotional or social needs aren't met. Measures like social distancing or self-isolation can make loneliness feel worse no matter why you feel lonely now. Reach out to the connections you do have. Suggest ways to keep in touch and see if you can set a regular time to connect. People may hesitate to reach out for a lot of different reasons, so don't be afraid to be the one who asks. Look for local community support groups and mutual aid groups on social media. This pandemic is bringing everyone together, so look for opportunities to make new connections. These groups are a great way to share your skills and abilities or seek help and support. Look for specialized support groups. Support groups are moving online, and there are a lot of different support lines to call if you need to talk to someone."]
+    },
+    {"tag": "fact-31",
+        "patterns": ["What's the difference between anxiety and stress?"],
+        "responses": ["Stress and anxiety are often used interchangeably, and there is overlap between stress and anxiety. Stress is related to the same fight, flight, or freeze response as anxiety, and the physical sensations of anxiety and stress may be very similar. The cause of stress and anxiety are usually different, however. Stress focuses on mainly external pressures on us that we're finding hard to cope with. When we are stressed, we usually know what we're stressed about, and the symptoms of stress typically disappear after the stressful situation is over. Anxiety, on the other hand, isn't always as easy to figure out. Anxiety focuses on worries or fears about things that could threaten us, as well as anxiety about the anxiety itself. Stress and anxiety are both part of being human, but both can be problems if they last for a long time or have an impact on our well-being or daily life."]
+    },
+    {"tag": "fact-32",
+        "patterns": ["What's the difference between sadness and depression?", "difference between sadness and depression"],
+        "responses": ["Sadness is a normal reaction to a loss, disappointment, problems, or other difficult situations. Feeling sad from time to time is just another part of being human. In these cases, feelings of sadness go away quickly and you can go about your daily life. Other ways to talk about sadness might be feeling low, feeling down, or feeling blue.A person may say they are feeling depressed, but if it goes away on its own and doesn't impact life in a big way, it probably isn't the illness of depression. Depression is a mental illness that affects your mood, the way you understand yourself, and the way you understand and relate to things around you. It can also go by different names, such as clinical depression, major depressive disorder, or major depression. Depression can come up for no reason, and it lasts for a long time. It's much more than sadness or low mood. People who experience depression may feel worthless or hopeless. They may feel unreasonable guilty. Some people may experience depression as anger or irritability. It may be hard to concentrate or make decisions. Most people lose interest in things that they used to enjoy and may isolate themselves from others. There are also physical signs of depression, such as problems with sleep, appetite and energy and unexplainable aches or pains. Some may experience difficult thoughts about death or ending their life (suicide). Depression lasts longer than two weeks, doesn't usually go away on its own, and impacts your life. It's a real illness, and it is very treatable. It's important to seek help if you're concerned about depression."]
+    },
+    {"tag": "fact-33",
+        "patterns": ["What are some coping strategies for managing stress?"],
+        "responses": ["There are many coping strategies that can help manage stress, such as deep breathing exercises, meditation, regular exercise, spending time in nature, engaging in hobbies, practicing mindfulness, seeking social support, and maintaining a healthy lifestyle."]
+    },
+    {"tag": "fact-34",
+        "patterns": ["How can I support a friend or family member with a mental illness?"],
+        "responses": ["Supporting a friend or family member with a mental illness involves listening without judgment, offering empathy and encouragement, helping them access professional help if needed, providing practical support with daily tasks, and being patient and understanding."]
+    },
+    {"tag": "fact-35",
+        "patterns": ["What are some signs that someone may be struggling with their mental health?"],
+        "responses": ["Signs that someone may be struggling with their mental health include changes in mood or behavior, social withdrawal, difficulty concentrating, changes in sleep or appetite, unexplained aches and pains, increased substance use, and talking about feeling hopeless or worthless."]
+    },
+    {"tag": "fact-36",
+        "patterns": ["What should I do if I'm feeling suicidal?"],
+        "responses": ["If you're feeling suicidal, it's important to seek help immediately. You can call a suicide hotline, talk to a trusted friend or family member, reach out to a mental health professional, or go to the nearest emergency room for assistance."]
+    },
+    {"tag": "fact-37",
+        "patterns": ["How can I improve my self-esteem?"],
+        "responses": ["Improving self-esteem involves practicing self-care, setting realistic goals, challenging negative thoughts, surrounding yourself with supportive people, focusing on your strengths, and seeking professional help if needed."]
+    },
+    {"tag": "fact-38",
+        "patterns": ["What are some common mental health disorders?"],
+        "responses": ["Common mental health disorders include depression, anxiety disorders, bipolar disorder, schizophrenia, post-traumatic stress disorder (PTSD), obsessive-compulsive disorder (OCD), and eating disorders."]
+    },
+    {"tag": "fact-39",
+        "patterns": ["Is it normal to experience mood swings?"],
+        "responses": ["It's normal to experience occasional mood swings, but frequent or extreme mood swings could be a sign of an underlying mental health condition, such as bipolar disorder."]
+    },
+    {"tag": "fact-40",
+        "patterns": ["How can I reduce stigma around mental illness?"],
+        "responses": ["Reducing stigma around mental illness involves educating yourself and others about mental health, challenging stereotypes and misconceptions, talking openly about mental health, and treating individuals with mental illness with dignity and respect."]
+    },
+    {"tag": "fact-41",
+        "patterns": ["How can I manage anxiety attacks?"],
+        "responses": ["Managing anxiety attacks involves practicing deep breathing exercises, using relaxation techniques, focusing on the present moment, challenging irrational thoughts, seeking professional help if needed, and considering medication options with a healthcare provider."]
+    },
+    {"tag": "fact-42",
+        "patterns": ["What are some self-care activities I can do to improve my mental health?"],
+        "responses": ["Self-care activities for improving mental health include practicing mindfulness, engaging in regular physical activity, getting enough sleep, eating a balanced diet, spending time with loved ones, pursuing hobbies and interests, and setting boundaries."]
+    },
+    {"tag": "fact-43",
+        "patterns": ["How can I handle workplace stress?"],
+        "responses": ["Handling workplace stress involves setting realistic goals, prioritizing tasks, communicating effectively with coworkers and supervisors, taking regular breaks, practicing time management skills, seeking support from colleagues or HR, and maintaining a healthy work-life balance."]
+    },
+    {"tag": "fact-44",
+        "patterns": ["What are the benefits of therapy?"],
+        "responses": ["Therapy can provide a safe and supportive environment to explore thoughts and feelings, develop coping strategies, gain insight into behavior patterns, improve communication skills, enhance self-esteem, and promote personal growth and healing."]
+    },
+    {"tag": "fact-45",
+        "patterns": ["How can I improve my sleep quality?"],
+        "responses": ["Improving sleep quality involves establishing a regular sleep schedule, creating a relaxing bedtime routine, avoiding caffeine and electronics before bed, creating a comfortable sleep environment, managing stress and anxiety, and seeking treatment for sleep disorders if necessary."]
+    },
+    {"tag": "fact-46",
+        "patterns": ["What are the potential side effects of psychiatric medications?"],
+        "responses": ["Potential side effects of psychiatric medications vary depending on the medication and individual response, but common side effects may include drowsiness, weight gain, nausea, headaches, dry mouth, and sexual dysfunction. It's important to discuss potential side effects with a healthcare provider."]
+    },
+    {"tag": "fact-47",
+        "patterns": ["How can I build resilience?"],
+        "responses": ["Building resilience involves developing positive coping skills, maintaining a positive outlook, fostering social connections, seeking support from others, practicing self-care, setting realistic goals, and learning from past experiences."]
+    },
+    {"tag": "fact-48",
+        "patterns": ["What are some warning signs of a potential mental health crisis?"],
+        "responses": ["Warning signs of a potential mental health crisis may include severe mood swings, increased agitation or irritability, withdrawal from friends and activities, changes in sleeping or eating patterns, intense fear or paranoia, and thoughts of harming oneself or others."]
+    },
+    {"tag": "fact-49",
+        "patterns": ["How can I talk to my loved ones about my mental health struggles?"],
+        "responses": ["Talking to loved ones about mental health struggles involves choosing the right time and place, expressing your feelings honestly and openly, providing information about your condition, setting boundaries, and asking for support."]
+    },
+    {"tag": "fact-50",
+        "patterns": ["What are some ways to manage social anxiety?"],
+        "responses": ["Managing social anxiety involves gradual exposure to feared social situations, practicing relaxation techniques, challenging negative thoughts, learning social skills, setting achievable goals, and seeking support from a therapist."]
+    },
+    {"tag": "fact-51",
+        "patterns": ["What are the signs of depression in teenagers?"],
+        "responses": ["Signs of depression in teenagers may include persistent sadness, irritability, withdrawal from friends and activities, changes in sleep and appetite, loss of interest in hobbies, difficulty concentrating, feelings of worthlessness or guilt, and thoughts of self-harm or suicide."]
+    },
+    {"tag": "fact-52",
+        "patterns": ["How can I support a friend or family member with depression?"],
+        "responses": ["Supporting a friend or family member with depression involves listening without judgment, offering encouragement and reassurance, helping them access professional help if needed, encouraging self-care activities, and being patient and understanding."]
+    },
+    {"tag": "fact-53",
+        "patterns": ["What are some coping strategies for dealing with grief and loss?"],
+        "responses": ["Coping strategies for dealing with grief and loss include allowing yourself to feel your emotions, talking to supportive friends or family members, seeking professional counseling, engaging in activities that bring comfort, creating rituals to honor the memory of your loved one, and giving yourself time to heal."]
+    },
+    {"tag": "fact-54",
+        "patterns": ["How can I reduce stigma surrounding mental illness?"],
+        "responses": ["Reducing stigma surrounding mental illness involves educating yourself and others about mental health, challenging stereotypes and misconceptions, speaking openly about your own experiences, promoting empathy and understanding, and advocating for equal treatment and support for individuals with mental health conditions."]
+    },
+    {"tag": "fact-55",
+        "patterns": ["What are the benefits of practicing mindfulness meditation?"],
+        "responses": ["Practicing mindfulness meditation can reduce stress, anxiety, and depression, improve focus and concentration, enhance self-awareness and emotional regulation, promote relaxation and overall well-being, and increase resilience to life's challenges."]
+    },
+    {"tag": "fact-56",
+        "patterns": ["How can I improve my self-esteem?"],
+        "responses": ["Improving self-esteem involves practicing self-compassion, challenging negative self-talk, setting realistic goals, celebrating your achievements, surrounding yourself with supportive people, engaging in activities you enjoy, and seeking professional help if needed."]
+    },
+    {"tag": "fact-57",
+        "patterns": ["What are some warning signs of an eating disorder?"],
+        "responses": ["Warning signs of an eating disorder may include excessive preoccupation with food, weight, and body image, restrictive eating habits, binge eating or purging behaviors, frequent fluctuations in weight, withdrawal from social activities, and physical symptoms such as dizziness, fatigue, or irregular menstruation."]
+    },
+    {"tag": "fact-58",
+        "patterns": ["How can I help someone who is struggling with an eating disorder?"],
+        "responses": ["Helping someone who is struggling with an eating disorder involves expressing concern in a non-judgmental way, encouraging them to seek professional help, offering emotional support and encouragement, avoiding comments about their appearance or eating habits, and being patient and understanding."]
+    },
+    {"tag": "fact-59",
+        "patterns": ["What are some strategies for managing anger in a healthy way?"],
+        "responses": ["Strategies for managing anger in a healthy way include deep breathing exercises, progressive muscle relaxation, taking a timeout to cool off, expressing your feelings calmly and assertively, finding healthy outlets for pent-up energy, and seeking support from a therapist or support group."]
+    },
+    {"tag": "fact-60",
+        "patterns": ["How can I practice effective communication in my relationships?"],
+        "responses": ["Practicing effective communication in relationships involves active listening, expressing yourself clearly and respectfully, using 'I' statements to express feelings and needs, being open to feedback, validating your partner's feelings, and finding compromises that satisfy both parties."]
+    },
+    {"tag": "fact-61",
+        "patterns": ["What are some relaxation techniques for reducing stress?"],
+        "responses": ["Relaxation techniques for reducing stress include deep breathing exercises, progressive muscle relaxation, visualization, mindfulness meditation, yoga, tai chi, and spending time in nature."]
+    },
+    {"tag": "fact-62",
+        "patterns": ["How can I improve my sleep quality?"],
+        "responses": ["Improving sleep quality involves maintaining a regular sleep schedule, creating a relaxing bedtime routine, limiting screen time before bed, avoiding caffeine and heavy meals before bedtime, exercising regularly, and creating a comfortable sleep environment."]
+    },
+    {"tag": "fact-63",
+        "patterns": ["What are some strategies for managing anxiety attacks?"],
+        "responses": ["Strategies for managing anxiety attacks include deep breathing exercises, grounding techniques, progressive muscle relaxation, visualization, focusing on the present moment, and seeking support from a therapist or support group."]
+    },
+    {"tag": "fact-64",
+        "patterns": ["How can I build resilience to cope with life's challenges?"],
+        "responses": ["Building resilience involves fostering positive relationships, developing problem-solving skills, practicing optimism and gratitude, maintaining a sense of purpose, seeking social support, and adapting to change."]
+    },
+    {"tag": "fact-65",
+        "patterns": ["What are the benefits of regular exercise for mental health?"],
+        "responses": ["Regular exercise can reduce symptoms of depression and anxiety, improve mood and self-esteem, increase energy levels, promote better sleep, and reduce stress."]
+    },
+    {"tag": "fact-66",
+        "patterns": ["How can I set boundaries in my relationships?"],
+        "responses": ["Setting boundaries in relationships involves identifying your needs and values, communicating your boundaries clearly and assertively, enforcing consequences for boundary violations, and practicing self-care."]
+    },
+    {"tag": "fact-67",
+        "patterns": ["What are some signs of burnout and how can I prevent it?"],
+        "responses": ["Signs of burnout may include exhaustion, cynicism, and reduced efficacy. To prevent burnout, it's important to prioritize self-care, set realistic goals, seek support from others, and take regular breaks."]
+    },
+    {"tag": "fact-68",
+        "patterns": ["How can I build healthy habits for better mental health?"],
+        "responses": ["Building healthy habits for better mental health involves prioritizing self-care, practicing mindfulness and relaxation techniques, exercising regularly, eating a balanced diet, getting enough sleep, and seeking professional help when needed."]
+    },
+    {"tag": "fact-69",
+        "patterns": ["What are some ways to challenge negative thinking patterns?"],
+        "responses": ["Ways to challenge negative thinking patterns include identifying cognitive distortions, questioning negative thoughts, reframing situations in a more positive light, and focusing on solutions rather than problems."]
+    },
+    {"tag": "fact-70",
+        "patterns": ["How can I practice self-compassion?"],
+        "responses": ["Practicing self-compassion involves treating yourself with kindness and understanding, acknowledging your own suffering, and recognizing that imperfection is a part of being human."]
+    },
+    {"tag": "fact-71",
+        "patterns": ["What are some common myths about therapy?"],
+        "responses": ["Common myths about therapy include the belief that only 'crazy' or 'weak' people go to therapy, that therapy is only for severe mental illness, and that therapists have all the answers."]
+    },
+    {"tag": "fact-72",
+        "patterns": ["How can I find affordable mental health care?"],
+        "responses": ["Finding affordable mental health care may involve seeking low-cost or sliding-scale therapy options, exploring community mental health centers, utilizing online therapy services, and checking if your insurance covers mental health services."]
+    },
+    {"tag": "fact-73",
+        "patterns": ["What are some strategies for managing work-related stress?"],
+        "responses": ["Strategies for managing work-related stress include setting boundaries between work and personal life, practicing time management and prioritization, seeking social support, and taking regular breaks."]
+    },
+    {"tag": "fact-74",
+        "patterns": ["How can I support a loved one with PTSD?"],
+        "responses": ["Supporting a loved one with PTSD involves listening without judgment, offering reassurance and encouragement, helping them access professional help if needed, and being patient and understanding."]
+    },
+    {"tag": "fact-75",
+        "patterns": ["What are some relaxation techniques for reducing anxiety?"],
+        "responses": ["Relaxation techniques for reducing anxiety include deep breathing exercises, progressive muscle relaxation, visualization, guided imagery, and mindfulness meditation."]
+    },
+    {"tag": "fact-76",
+        "patterns": ["How can I build self-confidence?"],
+        "responses": ["Building self-confidence involves setting realistic goals, celebrating your achievements, practicing self-care, facing your fears gradually, and challenging negative self-talk."]
+    },
+    {"tag": "fact-77",
+        "patterns": ["What are some coping strategies for dealing with trauma?"],
+        "responses": ["Coping strategies for dealing with trauma include seeking professional help, talking about your experiences with trusted friends or family members, practicing self-care, engaging in activities that bring comfort, and participating in support groups."]
+    },
+    {"tag": "fact-78",
+        "patterns": ["How can I practice assertiveness in my relationships?"],
+        "responses": ["Practicing assertiveness in relationships involves expressing your needs and feelings clearly and respectfully, setting boundaries, and standing up for yourself without being aggressive or passive."]
+    },
+    {"tag": "fact-79",
+        "patterns": ["What are some signs of a healthy relationship?"],
+        "responses": ["Signs of a healthy relationship may include mutual respect, trust, communication, support, shared values and interests, and the ability to resolve conflicts constructively."]
+    },
+    {"tag": "fact-80",
+        "patterns": ["How can I improve my emotional intelligence?"],
+        "responses": ["Improving emotional intelligence involves practicing self-awareness, self-regulation, empathy, and effective communication skills."]
+    },
+    {"tag": "fact-81",
+        "patterns": ["What are the benefits of journaling for mental health?"],
+        "responses": ["Journaling can help improve mood, reduce stress, enhance self-awareness, promote mindfulness, and facilitate problem-solving and emotional processing."]
+    },
+    {"tag": "fact-82",
+        "patterns": ["How can I practice mindfulness in everyday life?"],
+        "responses": ["Practicing mindfulness in everyday life involves paying attention to the present moment with openness, curiosity, and acceptance, and engaging in activities mindfully, such as eating, walking, or listening."]
+    },
+    {"tag": "fact-83",
+        "patterns": ["What are some strategies for managing panic attacks?"],
+        "responses": ["Strategies for managing panic attacks include practicing deep breathing exercises, using grounding techniques, focusing on the present moment, challenging catastrophic thoughts, and seeking professional help if needed."]
+    },
+    {"tag": "fact-84",
+        "patterns": ["How can I build healthy relationships with others?"],
+        "responses": ["Building healthy relationships with others involves effective communication, setting boundaries, expressing empathy and understanding, respecting differences, and resolving conflicts constructively."]
+    },
+    {"tag": "fact-85",
+        "patterns": ["What are some warning signs of a toxic relationship?"],
+        "responses": ["Warning signs of a toxic relationship may include lack of respect, manipulation, control, constant criticism, gaslighting, isolation from friends and family, and feeling drained or anxious in the person's presence."]
+    },
+    {"tag": "fact-86",
+        "patterns": ["How can I support a friend or family member with depression?"],
+        "responses": ["Supporting a friend or family member with depression involves listening without judgment, offering empathy and encouragement, helping them access professional help, and providing practical support with daily tasks if needed."]
+    },
+    {"tag": "fact-87",
+        "patterns": ["What are some ways to boost self-esteem?"],
+        "responses": ["Ways to boost self-esteem include practicing self-care, setting realistic goals, celebrating achievements, challenging negative self-talk, and surrounding yourself with supportive people."]
+    },
+    {"tag": "fact-88",
+        "patterns": ["How can I practice gratitude in my daily life?"],
+        "responses": ["Practicing gratitude in daily life involves keeping a gratitude journal, expressing appreciation to others, focusing on the positive aspects of life, and savoring moments of joy and contentment."]
+    },
+    {"tag": "fact-89",
+        "patterns": ["What are some ways to overcome social anxiety?"],
+        "responses": ["Ways to overcome social anxiety include gradual exposure to social situations, practicing relaxation techniques, challenging negative thoughts, learning social skills, and seeking support from a therapist or support group."]
+    },
+    {"tag": "fact-90",
+        "patterns": ["How can I manage anger in a healthy way?"],
+        "responses": ["Managing anger in a healthy way involves recognizing triggers, practicing relaxation techniques, taking a time-out, expressing feelings assertively, and seeking help from a therapist if anger becomes overwhelming."]
+    },
+    {"tag": "fact-91",
+        "patterns": ["What are some strategies for improving communication in relationships?"],
+        "responses": ["Strategies for improving communication in relationships include active listening, expressing feelings and needs clearly, avoiding blame and criticism, using 'I' statements, and practicing empathy and understanding."]
+    },
+    {"tag": "fact-92",
+        "patterns": ["How can I develop assertiveness skills?"],
+        "responses": ["Developing assertiveness skills involves practicing self-confidence, setting boundaries, expressing needs and feelings assertively, and standing up for yourself while respecting the rights of others."]
+    },
+    {"tag": "fact-93",
+        "patterns": ["What are some benefits of spending time in nature for mental health?"],
+        "responses": ["Spending time in nature can reduce stress, improve mood, increase feelings of well-being, boost creativity and problem-solving skills, and promote physical health."]
+    },
+    {"tag": "fact-94",
+        "patterns": ["How can I build a support network?"],
+        "responses": ["Building a support network involves reaching out to friends, family members, colleagues, and community resources, joining support groups, volunteering, and being open to giving and receiving support."]
+    },
+    {"tag": "fact-95",
+        "patterns": ["What are some ways to cope with grief and loss?"],
+        "responses": ["Ways to cope with grief and loss include allowing yourself to grieve, seeking support from others, expressing emotions, engaging in self-care activities, and creating rituals to honor the memory of your loved one."]
+    },
+    {"tag": "fact-96",
+        "patterns": ["How can I practice effective time management?"],
+        "responses": ["Practicing effective time management involves setting goals, prioritizing tasks, breaking tasks into smaller steps, scheduling time for important activities, minimizing distractions, and being flexible."]
+    },
+    {"tag": "fact-97",
+        "patterns": ["What are some strategies for building resilience in children?"],
+        "responses": ["Strategies for building resilience in children include fostering positive relationships, encouraging independence and problem-solving skills, teaching emotional regulation, promoting a growth mindset, and providing opportunities for success."]
+    },
+    {"tag": "fact-98",
+        "patterns": ["How can I develop a positive mindset?"],
+        "responses": ["Developing a positive mindset involves focusing on strengths and successes, practicing gratitude, reframing negative thoughts, visualizing success, and surrounding yourself with positivity."]
+    },
+    {"tag": "fact-99",
+        "patterns": ["What are some ways to cope with change and uncertainty?"],
+        "responses": ["Ways to cope with change and uncertainty include focusing on what you can control, practicing mindfulness and acceptance, seeking support from others, and staying flexible and adaptable."]
+    },
+    {"tag": "fact-100",
+        "patterns": ["How can I set SMART goals for personal growth?"],
+        "responses": ["Setting SMART goals for personal growth involves making goals specific, measurable, achievable, relevant, and time-bound, and breaking them down into smaller steps."]
+    },
+    {"tag": "fact-101",
+        "patterns": ["What are some coping strategies for dealing with anxiety?"],
+        "responses": ["Coping strategies for dealing with anxiety include deep breathing exercises, progressive muscle relaxation, mindfulness meditation, journaling, and engaging in physical activity."]
+    },
+    {"tag": "fact-102",
+        "patterns": ["How does exercise impact mental health?"],
+        "responses": ["Exercise can have a positive impact on mental health by reducing symptoms of depression and anxiety, improving mood, boosting self-esteem, and promoting better sleep."]
+    },
+    {"tag": "fact-103",
+        "patterns": ["What role does nutrition play in mental health?"],
+        "responses": ["Nutrition plays a crucial role in mental health by providing essential nutrients that support brain function and neurotransmitter production. A balanced diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats can help promote mental well-being."]
+    },
+    {"tag": "fact-104",
+        "patterns": ["How can I manage stress in healthy ways?"],
+        "responses": ["Managing stress in healthy ways involves practicing relaxation techniques, such as deep breathing and meditation, engaging in regular physical activity, getting enough sleep, maintaining a healthy work-life balance, and seeking support from friends and family."]
+    },
+    {"tag": "fact-105",
+        "patterns": ["What are some signs that it's time to seek professional help for mental health issues?"],
+        "responses": ["Signs that it's time to seek professional help for mental health issues include persistent feelings of sadness or hopelessness, difficulty functioning in daily life, withdrawal from social activities, changes in sleep or appetite, and thoughts of self-harm or suicide."]
+    },
+    {"tag": "fact-106",
+        "patterns": ["What is the connection between sleep and mental health?"],
+        "responses": ["Sleep plays a critical role in mental health, and poor sleep can exacerbate symptoms of anxiety, depression, and other mental health disorders. Conversely, improving sleep quality can help alleviate these symptoms and promote overall well-being."]
+    },
+    {"tag": "fact-107",
+        "patterns": ["How can I support a loved one with a mental illness?"],
+        "responses": ["Supporting a loved one with a mental illness involves educating yourself about their condition, offering empathy and understanding, listening without judgment, encouraging them to seek professional help, and providing practical support with daily tasks."]
+    },
+    {"tag": "fact-108",
+        "patterns": ["What are some common myths about mental illness?"],
+        "responses": ["Common myths about mental illness include the belief that it is a sign of weakness, that people with mental illness are violent or unpredictable, and that they can just 'snap out of it.' In reality, mental illness is a medical condition that requires treatment and support."]
+    },
+    {"tag": "fact-109",
+        "patterns": ["How can I reduce stigma surrounding mental health?"],
+        "responses": ["Reducing stigma surrounding mental health involves challenging stereotypes and misconceptions, talking openly about mental illness, promoting empathy and understanding, and advocating for equal access to mental health services."]
+    },
+    {"tag": "fact-110",
+        "patterns": ["What are some self-care practices for maintaining mental health?"],
+        "responses": ["Self-care practices for maintaining mental health include setting boundaries, prioritizing activities that bring joy and fulfillment, practicing mindfulness and relaxation techniques, engaging in hobbies and interests, and seeking support from friends and family."]
+    },
+    {"tag": "fact-111",
+        "patterns": ["How does social media impact mental health?"],
+        "responses": ["Social media can have both positive and negative effects on mental health. While it can provide social support and connection, excessive use can contribute to feelings of loneliness, low self-esteem, and anxiety. It's important to use social media mindfully and in moderation."]
+    },
+    {"tag": "fact-112",
+        "patterns": ["What are some early warning signs of mental health problems in children and adolescents?"],
+        "responses": ["Early warning signs of mental health problems in children and adolescents include changes in mood or behavior, difficulty concentrating, changes in sleep or appetite, social withdrawal, and decline in academic performance."]
+    },
+    {"tag": "fact-113",
+        "patterns": ["What are some effective treatments for depression?"],
+        "responses": ["Effective treatments for depression include psychotherapy (such as cognitive-behavioral therapy), medication (such as antidepressants), and lifestyle changes (such as regular exercise, healthy diet, and stress management). In some cases, a combination of treatments may be recommended."]
+    },
+    {"tag": "fact-114",
+        "patterns": ["How can I improve my mental resilience?"],
+        "responses": ["Improving mental resilience involves cultivating positive coping skills, building strong social connections, practicing gratitude and mindfulness, setting realistic goals, and seeking support from others during times of adversity."]
+    },
+    {"tag": "fact-115",
+        "patterns": ["What are some ways to promote positive mental health in the workplace?"],
+        "responses": ["Ways to promote positive mental health in the workplace include providing mental health education and resources, offering employee assistance programs, promoting work-life balance, fostering a supportive and inclusive culture, and addressing stigma surrounding mental illness."]
+    },
+    {"tag": "fact-116",
+        "patterns": ["How can I help someone who is experiencing a mental health crisis?"],
+        "responses": ["If someone is experiencing a mental health crisis, it's important to stay calm, listen non-judgmentally, offer support and reassurance, and help them connect with professional help or crisis services, such as hotlines or emergency services."]
+    },
+    {"tag": "fact-117",
+        "patterns": ["What are some strategies for managing obsessive-compulsive disorder (OCD)?"],
+        "responses": ["Strategies for managing obsessive-compulsive disorder (OCD) include exposure and response prevention therapy, medication (such as selective serotonin reuptake inhibitors), and support groups. It's important for individuals with OCD to work with a qualified mental health professional to develop a personalized treatment plan."]
+    },
+    {"tag": "fact-118",
+        "patterns": ["How does trauma impact mental health?"],
+        "responses": ["Trauma can have profound effects on mental health, leading to symptoms such as flashbacks, nightmares, hypervigilance, and emotional numbing. It can also increase the risk of developing conditions such as post-traumatic stress disorder (PTSD), depression, and anxiety."]
+    },
+    {"tag": "fact-119",
+        "patterns": ["What are some strategies for managing bipolar disorder?"],
+        "responses": ["Strategies for managing bipolar disorder include medication (such as mood stabilizers and antipsychotics), psychotherapy (such as cognitive-behavioral therapy), lifestyle changes (such as maintaining a regular sleep schedule and avoiding alcohol and drugs), and building a strong support network."]
+    },
+    {"tag": "fact-120",
+        "patterns": ["How can I find mental health resources in my community?"],
+        "responses": ["Finding mental health resources in your community involves reaching out to local mental health organizations, clinics, hospitals, and support groups, as well as utilizing online directories and helplines."]
+    },
+    {"tag": "fact-121",
+        "patterns": ["How can mindfulness meditation benefit mental health?"],
+        "responses": ["Mindfulness meditation can benefit mental health by reducing stress, anxiety, and depression, improving attention and focus, promoting emotional regulation, and enhancing overall well-being."]
+    },
+    {"tag": "fact-122",
+        "patterns": ["What are some common misconceptions about therapy?"],
+        "responses": ["Common misconceptions about therapy include the belief that only 'crazy' or 'weak' people go to therapy, that therapy is only for severe mental illness, and that therapists will judge or criticize you."]
+    },
+    {"tag": "fact-123",
+        "patterns": ["How does gratitude practice contribute to mental well-being?"],
+        "responses": ["Gratitude practice can contribute to mental well-being by fostering positive emotions, reducing stress and anxiety, improving self-esteem, and enhancing social relationships."]
+    },
+    {"tag": "fact-124",
+        "patterns": ["What are some effective ways to manage anger?"],
+        "responses": ["Effective ways to manage anger include deep breathing exercises, progressive muscle relaxation, taking a time-out, expressing emotions in a healthy way, and seeking professional help if anger becomes overwhelming."]
+    },
+    {"tag": "fact-125",
+        "patterns": ["How can pets improve mental health?"],
+        "responses": ["Pets can improve mental health by providing companionship, reducing feelings of loneliness and depression, increasing physical activity, and offering unconditional love and support."]
+    },
+    {"tag": "fact-126",
+        "patterns": ["What are the benefits of spending time in nature for mental health?"],
+        "responses": ["Spending time in nature can benefit mental health by reducing stress, improving mood, increasing feelings of awe and wonder, promoting mindfulness, and fostering a sense of connection to the natural world."]
+    },
+    {"tag": "fact-127",
+        "patterns": ["How does social support impact mental health?"],
+        "responses": ["Social support can have a positive impact on mental health by providing emotional validation, practical assistance, and a sense of belonging and connection, which can buffer against stress and promote resilience."]
+    },
+    {"tag": "fact-128",
+        "patterns": ["What are some strategies for managing social anxiety?"],
+        "responses": ["Strategies for managing social anxiety include gradual exposure to feared situations, cognitive-behavioral therapy techniques, relaxation exercises, and developing coping skills to challenge negative thoughts."]
+    },
+    {"tag": "fact-129",
+        "patterns": ["How does volunteering benefit mental health?"],
+        "responses": ["Volunteering can benefit mental health by providing a sense of purpose and fulfillment, increasing social connections and support networks, and fostering a sense of gratitude and perspective."]
+    },
+    {"tag": "fact-130",
+        "patterns": ["What are some common symptoms of generalized anxiety disorder (GAD)?"],
+        "responses": ["Common symptoms of generalized anxiety disorder (GAD) include excessive worry and rumination, restlessness, fatigue, difficulty concentrating, irritability, muscle tension, and sleep disturbances."]
+    },
+    {"tag": "fact-131",
+        "patterns": ["How does journaling contribute to mental health?"],
+        "responses": ["Journaling can contribute to mental health by providing an outlet for self-expression, facilitating emotional processing and reflection, promoting self-awareness and insight, and reducing symptoms of anxiety and depression."]
+    },
+    {"tag": "fact-132",
+        "patterns": ["What are some strategies for improving self-esteem?"],
+        "responses": ["Strategies for improving self-esteem include practicing self-compassion, setting realistic goals, challenging negative self-talk, focusing on strengths and accomplishments, and surrounding oneself with supportive and positive influences."]
+    },
+    {"tag": "fact-133",
+        "patterns": ["How does music therapy benefit mental health?"],
+        "responses": ["Music therapy can benefit mental health by reducing stress and anxiety, improving mood and emotional regulation, enhancing social skills and communication, and promoting relaxation and self-expression."]
+    },
+    {"tag": "fact-134",
+        "patterns": ["What are some ways to cultivate resilience in children?"],
+        "responses": ["Ways to cultivate resilience in children include fostering supportive relationships, teaching problem-solving and coping skills, encouraging a growth mindset, promoting emotional regulation, and providing opportunities for autonomy and mastery."]
+    },
+    {"tag": "fact-135",
+        "patterns": ["How does laughter therapy benefit mental health?"],
+        "responses": ["Laughter therapy, also known as laughter yoga, can benefit mental health by reducing stress hormones, increasing endorphin levels, boosting mood and immune function, and fostering social connections and laughter-induced relaxation."]
+    },
+    {"tag": "fact-136",
+        "patterns": ["What are some strategies for managing perfectionism?"],
+        "responses": ["Strategies for managing perfectionism include setting realistic goals, practicing self-compassion and self-acceptance, challenging all-or-nothing thinking, focusing on progress rather than perfection, and seeking support from others."]
+    },
+    {"tag": "fact-137",
+        "patterns": ["How can art therapy promote healing and self-expression?"],
+        "responses": ["Art therapy can promote healing and self-expression by providing a non-verbal outlet for processing emotions, reducing stress and anxiety, facilitating insight and self-awareness, and promoting relaxation and mindfulness."]
+    },
+    {"tag": "fact-138",
+        "patterns": ["What are some effective strategies for managing panic attacks?"],
+        "responses": ["Effective strategies for managing panic attacks include deep breathing exercises, grounding techniques, progressive muscle relaxation, focusing on the present moment, and seeking support from a mental health professional."]
+    },
+    {"tag": "fact-139",
+        "patterns": ["How does pet therapy benefit individuals with mental illness?"],
+        "responses": ["Pet therapy, also known as animal-assisted therapy, can benefit individuals with mental illness by reducing symptoms of anxiety and depression, providing comfort and companionship, increasing social interaction, and promoting a sense of purpose and responsibility."]
+    },
+    {"tag": "fact-140",
+        "patterns": ["What are some ways to practice emotional regulation?"],
+        "responses": ["Ways to practice emotional regulation include mindfulness meditation, deep breathing exercises, identifying and challenging negative thoughts, expressing emotions in healthy ways, and seeking support from trusted individuals."]
+    },
+    {"tag": "fact-141",
+        "patterns": ["What are some signs of emotional exhaustion?"],
+        "responses": ["Signs of emotional exhaustion include feeling drained or depleted, experiencing a lack of motivation or interest in activities, feeling emotionally numb or detached, and having difficulty concentrating or making decisions."]
+    },
+    {"tag": "fact-142",
+        "patterns": ["How does chronic stress impact mental health?"],
+        "responses": ["Chronic stress can impact mental health by increasing the risk of anxiety, depression, and other mental health disorders, impairing cognitive function, disrupting sleep patterns, and contributing to unhealthy coping behaviors."]
+    },
+    {"tag": "fact-143",
+        "patterns": ["What are some common symptoms of burnout?"],
+        "responses": ["Common symptoms of burnout include feelings of exhaustion or fatigue, cynicism or detachment from work, reduced professional efficacy, irritability or moodiness, and physical symptoms such as headaches or gastrointestinal issues."]
+    },
+    {"tag": "fact-144",
+        "patterns": ["How does social comparison affect mental health?"],
+        "responses": ["Social comparison can affect mental health by leading to feelings of inadequacy, envy, or low self-esteem, increasing stress and anxiety, and undermining self-confidence and self-worth."]
+    },
+    {"tag": "fact-145",
+        "patterns": ["What are some coping strategies for dealing with loneliness?"],
+        "responses": ["Coping strategies for dealing with loneliness include reaching out to friends or family members, joining social or interest-based groups, volunteering or participating in community activities, adopting a pet for companionship, and seeking professional support if needed."]
+    },
+    {"tag": "fact-146",
+        "patterns": ["How does grief impact mental health?"],
+        "responses": ["Grief can impact mental health by causing feelings of sadness, anger, guilt, or despair, disrupting sleep and appetite patterns, impairing concentration and decision-making, and increasing the risk of depression or anxiety."]
+    },
+    {"tag": "fact-147",
+        "patterns": ["What are some common signs of low self-esteem?"],
+        "responses": ["Common signs of low self-esteem include negative self-talk or self-criticism, feelings of worthlessness or inadequacy, fear of rejection or failure, difficulty asserting oneself or setting boundaries, and seeking validation or approval from others."]
+    },
+    {"tag": "fact-148",
+        "patterns": ["How does chronic pain affect mental health?"],
+        "responses": ["Chronic pain can affect mental health by causing or exacerbating symptoms of depression, anxiety, or other mental health disorders, reducing quality of life and functional ability, and contributing to feelings of hopelessness or despair."]
+    },
+    {"tag": "fact-149",
+        "patterns": ["What are some strategies for coping with intrusive thoughts?"],
+        "responses": ["Strategies for coping with intrusive thoughts include practicing mindfulness or relaxation techniques, challenging negative thought patterns, redirecting attention to positive or neutral stimuli, and seeking support from a therapist or counselor."]
+    },
+    {"tag": "fact-150",
+        "patterns": ["How does chronic illness impact mental health?"],
+        "responses": ["Chronic illness can impact mental health by causing feelings of grief, loss, or frustration, increasing stress and anxiety about the future, limiting social interactions and activities, and challenging one's sense of identity and self-worth."]
+    },
+    {"tag": "fact-151",
+        "patterns": ["What are some signs of emotional numbness?"],
+        "responses": ["Signs of emotional numbness include feeling disconnected or detached from one's emotions, experiencing a lack of pleasure or interest in activities, having difficulty expressing or identifying emotions, and feeling apathetic or indifferent towards life."]
+    },
+    {"tag": "fact-152",
+        "patterns": ["How does perfectionism affect mental health?"],
+        "responses": ["Perfectionism can affect mental health by leading to feelings of stress, anxiety, or self-doubt, impairing performance or productivity, fostering a fear of failure or criticism, and undermining self-esteem and self-worth."]
+    },
+    {"tag": "fact-153",
+        "patterns": ["What are some strategies for coping with existential anxiety?"],
+        "responses": ["Strategies for coping with existential anxiety include exploring one's values and beliefs, finding purpose or meaning in life, practicing acceptance and mindfulness, fostering connections with others, and seeking support from a therapist or spiritual advisor."]
+    },
+    {"tag": "fact-154",
+        "patterns": ["How does trauma impact mental health?"],
+        "responses": ["Trauma can impact mental health by causing symptoms of post-traumatic stress disorder (PTSD), such as flashbacks, nightmares, or hypervigilance, increasing the risk of depression, anxiety, or substance abuse, and impairing interpersonal relationships and social functioning."]
+    },
+    {"tag": "fact-155",
+        "patterns": ["What are some common symptoms of imposter syndrome?"],
+        "responses": ["Common symptoms of imposter syndrome include self-doubt or insecurity about one's abilities, fear of being exposed as a fraud or failure, attributing success to luck or external factors, and setting unrealistically high standards for oneself."]
+    },
+    {"tag": "fact-156",
+        "patterns": ["How does chronic fatigue impact mental health?"],
+        "responses": ["Chronic fatigue can impact mental health by causing feelings of frustration, helplessness, or hopelessness, reducing motivation or interest in activities, impairing cognitive function or concentration, and increasing symptoms of depression or anxiety."]
+    },
+    {"tag": "fact-157",
+        "patterns": ["What are some signs of emotional instability?"],
+        "responses": ["Signs of emotional instability include frequent mood swings or fluctuations in mood, intense or unpredictable emotional reactions, difficulty regulating emotions or impulses, and impaired interpersonal relationships or social functioning."]
+    },
+    {"tag": "fact-158",
+        "patterns": ["How does social rejection affect mental health?"],
+        "responses": ["Social rejection can affect mental health by triggering feelings of sadness, loneliness, or low self-esteem, increasing stress or anxiety about social interactions, and undermining feelings of belonging or acceptance."]
+    },
+    {"tag": "fact-159",
+        "patterns": ["What are some strategies for coping with chronic stress?"],
+        "responses": ["Strategies for coping with chronic stress include practicing relaxation techniques, such as deep breathing or meditation, engaging in regular physical activity or exercise, maintaining a healthy lifestyle with balanced nutrition and sleep, and seeking social support from friends or family."]
+    },
+    {"tag": "fact-160",
+        "patterns": ["How does emotional abuse impact mental health?"],
+        "responses": ["Emotional abuse can impact mental health by causing feelings of worthlessness, shame, or self-blame, increasing symptoms of depression or anxiety, undermining self-esteem or self-confidence, and impairing trust in others or interpersonal relationships."]
+    },
+    {"tag": "fact-161",
+        "patterns": ["What are some signs of seasonal affective disorder (SAD)?"],
+        "responses": ["Signs of seasonal affective disorder (SAD) include changes in mood, appetite, and energy levels that occur with the changing seasons, particularly during fall and winter months. Symptoms may include feelings of sadness, hopelessness, or irritability, difficulty concentrating, changes in appetite or weight, and fatigue or low energy."]
+    },
+    {"tag": "fact-162",
+        "patterns": ["How does loneliness impact mental health?"],
+        "responses": ["Loneliness can impact mental health by increasing the risk of depression, anxiety, or other mental health disorders, impairing cognitive function or decision-making, contributing to unhealthy behaviors such as substance abuse or overeating, and undermining feelings of self-worth or belonging."]
+    },
+    {"tag": "fact-163",
+        "patterns": ["What are some common symptoms of anxiety disorders?"],
+        "responses": ["Common symptoms of anxiety disorders include feelings of worry or fear that are excessive or disproportionate to the situation, restlessness or irritability, muscle tension or headaches, difficulty concentrating or sleeping, and physical symptoms such as sweating, trembling, or rapid heartbeat."]
+    },
+    {"tag": "fact-164",
+        "patterns": ["How does social isolation affect mental health?"],
+        "responses": ["Social isolation can affect mental health by increasing feelings of loneliness, depression, or anxiety, reducing opportunities for social support or connection, impairing social skills or communication abilities, and contributing to feelings of low self-esteem or worthlessness."]
+    },
+    {"tag": "fact-165",
+        "patterns": ["What are some signs of emotional dysregulation?"],
+        "responses": ["Signs of emotional dysregulation include difficulty managing or controlling emotions, intense or rapid shifts in mood, impulsivity or reckless behavior, and interpersonal conflicts or relationship difficulties."]
+    },
+    {"tag": "fact-166",
+        "patterns": ["How does chronic insomnia impact mental health?"],
+        "responses": ["Chronic insomnia can impact mental health by increasing the risk of depression, anxiety, or other mental health disorders, impairing cognitive function or decision-making, contributing to irritability or moodiness, and undermining overall well-being or quality of life."]
+    },
+    {"tag": "fact-167",
+        "patterns": ["What are some common symptoms of panic attacks?"],
+        "responses": ["Common symptoms of panic attacks include sudden feelings of intense fear or discomfort, rapid heartbeat or palpitations, sweating or trembling, shortness of breath or feelings of choking, and chest pain or discomfort."]
+    },
+    {"tag": "fact-168",
+        "patterns": ["How does chronic loneliness impact physical health?"],
+        "responses": ["Chronic loneliness can impact physical health by increasing the risk of cardiovascular disease, hypertension, or other chronic health conditions, impairing immune function or response to illness, and contributing to unhealthy behaviors such as smoking or sedentary lifestyle."]
+    },
+    {"tag": "fact-169",
+        "patterns": ["What are some strategies for coping with social anxiety?"],
+        "responses": ["Strategies for coping with social anxiety include gradual exposure to social situations or triggers, practicing relaxation techniques such as deep breathing or mindfulness, challenging negative thoughts or beliefs about social interactions, and seeking support from a therapist or support group."]
+    },
+    {"tag": "fact-170",
+        "patterns": ["How does unresolved trauma impact mental health?"],
+        "responses": ["Unresolved trauma can impact mental health by causing symptoms of post-traumatic stress disorder (PTSD), such as flashbacks, nightmares, or hypervigilance, increasing the risk of depression, anxiety, or substance abuse, and impairing interpersonal relationships or social functioning."]
+    },
+    {"tag": "fact-171",
+        "patterns": ["What are some common symptoms of generalized anxiety disorder (GAD)?"],
+        "responses": ["Common symptoms of generalized anxiety disorder (GAD) include excessive worry or anxiety about a variety of topics or situations, restlessness or irritability, difficulty concentrating or sleeping, muscle tension or headaches, and physical symptoms such as sweating, trembling, or stomach upset."]
+    },
+    {"tag": "fact-172",
+        "patterns": ["How does unresolved grief impact mental health?"],
+        "responses": ["Unresolved grief can impact mental health by causing prolonged or intense feelings of sadness, guilt, or despair, disrupting sleep or appetite patterns, impairing concentration or decision-making, and increasing the risk of depression, anxiety, or substance abuse."]
+    },
+    {"tag": "fact-173",
+        "patterns": ["What are some signs of emotional exhaustion?"],
+        "responses": ["Signs of emotional exhaustion include feeling drained or depleted, experiencing a lack of motivation or interest in activities, feeling emotionally numb or detached, and having difficulty concentrating or making decisions."]
+    },
+    {"tag": "fact-174",
+        "patterns": ["How does chronic stress impact mental health?"],
+        "responses": ["Chronic stress can impact mental health by increasing the risk of anxiety, depression, and other mental health disorders, impairing cognitive function, disrupting sleep patterns, and contributing to unhealthy coping behaviors."]
+    },
+    {"tag": "fact-175",
+        "patterns": ["What are some common symptoms of burnout?"],
+        "responses": ["Common symptoms of burnout include feelings of exhaustion or fatigue, cynicism or detachment from work, reduced professional efficacy, irritability or moodiness, and physical symptoms such as headaches or gastrointestinal issues."]
+    },
+    {"tag": "fact-176",
+        "patterns": ["How does social comparison affect mental health?"],
+        "responses": ["Social comparison can affect mental health by leading to feelings of inadequacy, envy, or low self-esteem, increasing stress and anxiety, and undermining self-confidence and self-worth."]
+    },
+    {"tag": "fact-177",
+        "patterns": ["What are some coping strategies for dealing with loneliness?"],
+        "responses": ["Coping strategies for dealing with loneliness include reaching out to friends or family members, joining social or interest-based groups, volunteering or participating in community activities, adopting a pet for companionship, and seeking professional support if needed."]
+    },
+    {"tag": "fact-178",
+        "patterns": ["How does grief impact mental health?"],
+        "responses": ["Grief can impact mental health by causing feelings of sadness, anger, guilt, or despair, disrupting sleep and appetite patterns, impairing concentration and decision-making, and increasing the risk of depression or anxiety."]
+    },
+    {"tag": "fact-179",
+        "patterns": ["What are some common signs of low self-esteem?"],
+        "responses": ["Common signs of low self-esteem include negative self-talk or self-criticism, feelings of worthlessness or inadequacy, fear of rejection or failure, difficulty asserting oneself or setting boundaries, and seeking validation or approval from others."]
+    },
+    {"tag": "fact-180",
+        "patterns": ["How does chronic pain affect mental health?"],
+        "responses": ["Chronic pain can affect mental health by causing or exacerbating symptoms of depression, anxiety, or other mental health disorders, reducing quality of life and functional ability, and contributing to feelings of hopelessness or despair."]
+    },
+    {"tag": "fact-181",
+        "patterns": ["What are some common types of therapy for mental health conditions?"],
+        "responses": ["Common types of therapy for mental health conditions include cognitive-behavioral therapy (CBT), which focuses on changing negative thought patterns and behaviors, psychodynamic therapy, which explores unconscious thoughts and emotions, interpersonal therapy (IPT), which addresses relationship issues, and mindfulness-based therapies, which promote present-moment awareness and acceptance."]
+    },
+    {"tag": "fact-182",
+        "patterns": ["How does cognitive-behavioral therapy (CBT) work?"],
+        "responses": ["Cognitive-behavioral therapy (CBT) works by helping individuals identify and challenge negative thought patterns and beliefs, develop healthier coping strategies and behaviors, and learn skills to manage symptoms of anxiety, depression, or other mental health conditions."]
+    },
+    {"tag": "fact-183",
+        "patterns": ["What are some common types of medication used to treat depression?"],
+        "responses": ["Common types of medication used to treat depression include selective serotonin reuptake inhibitors (SSRIs), serotonin-norepinephrine reuptake inhibitors (SNRIs), tricyclic antidepressants (TCAs), and monoamine oxidase inhibitors (MAOIs), as well as atypical antidepressants such as bupropion or mirtazapine."]
+    },
+    {"tag": "fact-184",
+        "patterns": ["How does medication management work in treating mental health conditions?"],
+        "responses": ["Medication management involves working closely with a healthcare provider to find the right medication, dosage, and treatment plan to effectively manage symptoms of a mental health condition. It may require ongoing monitoring and adjustments to ensure optimal response and minimize side effects."]
+    },
+    {"tag": "fact-185",
+        "patterns": ["What are some common types of therapy for anxiety disorders?"],
+        "responses": ["Common types of therapy for anxiety disorders include cognitive-behavioral therapy (CBT), exposure therapy, which involves gradually confronting feared situations or objects, acceptance and commitment therapy (ACT), which focuses on acceptance of difficult emotions and values-based behavior change, and dialectical behavior therapy (DBT), which emphasizes mindfulness and emotion regulation skills."]
+    },
+    {"tag": "fact-186",
+        "patterns": ["How does exposure therapy work?"],
+        "responses": ["Exposure therapy works by gradually exposing individuals to feared situations, objects, or memories in a safe and controlled environment, allowing them to confront and overcome their fears, reduce avoidance behaviors, and learn new coping strategies."]
+    },
+    {"tag": "fact-187",
+        "patterns": ["What are some common types of medication used to treat anxiety disorders?"],
+        "responses": ["Common types of medication used to treat anxiety disorders include selective serotonin reuptake inhibitors (SSRIs), serotonin-norepinephrine reuptake inhibitors (SNRIs), benzodiazepines, and beta-blockers, as well as certain anticonvulsants or antipsychotics in some cases."]
+    },
+    {"tag": "fact-188",
+        "patterns": ["How does mindfulness-based therapy work?"],
+        "responses": ["Mindfulness-based therapy works by promoting present-moment awareness, acceptance of difficult thoughts and emotions, and nonjudgmental observation of internal experiences, helping individuals develop greater emotional regulation, stress resilience, and overall well-being."]
+    },
+    {"tag": "fact-189",
+        "patterns": ["What are some common types of therapy for trauma-related disorders?"],
+        "responses": ["Common types of therapy for trauma-related disorders include trauma-focused cognitive-behavioral therapy (TF-CBT), which addresses negative beliefs and emotions related to traumatic experiences, eye movement desensitization and reprocessing (EMDR), which uses bilateral stimulation to process traumatic memories, and narrative exposure therapy (NET), which helps individuals integrate fragmented memories into a coherent narrative."]
+    },
+    {"tag": "fact-190",
+        "patterns": ["How does medication-assisted therapy work in treating substance use disorders?"],
+        "responses": ["Medication-assisted therapy (MAT) works by combining medication with behavioral therapies to treat substance use disorders, helping to reduce cravings and withdrawal symptoms, prevent relapse, and support long-term recovery."]
+    },
+    {"tag": "fact-191",
+        "patterns": ["What are some common types of medication used to treat bipolar disorder?"],
+        "responses": ["Common types of medication used to treat bipolar disorder include mood stabilizers such as lithium or valproate, antipsychotics, and certain antidepressants, as well as combinations of medications tailored to individual symptom presentation."]
+    },
+    {"tag": "fact-192",
+        "patterns": ["How does dialectical behavior therapy (DBT) work?"],
+        "responses": ["Dialectical behavior therapy (DBT) works by combining cognitive-behavioral techniques with mindfulness and acceptance-based strategies, helping individuals regulate emotions, improve interpersonal relationships, and build skills for coping with distress."]
+    },
+    {"tag": "fact-193",
+        "patterns": ["What are some common types of therapy for eating disorders?"],
+        "responses": ["Common types of therapy for eating disorders include cognitive-behavioral therapy (CBT), which targets dysfunctional thoughts and behaviors related to food and body image, interpersonal psychotherapy (IPT), which addresses relationship issues, and dialectical behavior therapy (DBT), which focuses on emotion regulation and distress tolerance."]
+    },
+    {"tag": "fact-194",
+        "patterns": ["How does medication management work in treating attention-deficit/hyperactivity disorder (ADHD)?"],
+        "responses": ["Medication management for ADHD involves prescribing stimulant medications such as methylphenidate or amphetamine derivatives to improve attention, focus, and impulse control, as well as nonstimulant medications such as atomoxetine or guanfacine in some cases."]
+    },
+    {"tag": "fact-195",
+        "patterns": ["What are some common types of therapy for attention-deficit/hyperactivity disorder (ADHD)?"],
+        "responses": ["Common types of therapy for ADHD include behavioral therapy, which focuses on teaching organizational and time management skills, cognitive-behavioral therapy (CBT), which targets negative thought patterns and behaviors, and family therapy, which addresses family dynamics and communication."]
+    },
+    {"tag": "fact-196",
+        "patterns": ["How does medication management work in treating schizophrenia?"],
+        "responses": ["Medication management for schizophrenia involves prescribing antipsychotic medications such as first-generation (typical) or second-generation (atypical) antipsychotics to reduce psychotic symptoms such as hallucinations or delusions, as well as mood stabilizers or antidepressants in some cases."]
+    },
+    {"tag": "fact-197",
+        "patterns": ["What are some common types of therapy for schizophrenia?"],
+        "responses": ["Common types of therapy for schizophrenia include cognitive-behavioral therapy (CBT), which targets delusional beliefs and hallucinations, supportive therapy, which provides practical assistance and social support, and family therapy, which addresses family dynamics and communication."]
+    },
+    {"tag": "fact-198",
+        "patterns": ["How does medication management work in treating obsessive-compulsive disorder (OCD)?"],
+        "responses": ["Medication management for OCD involves prescribing selective serotonin reuptake inhibitors (SSRIs) or certain tricyclic antidepressants to reduce obsessive thoughts and compulsive behaviors, as well as augmentation strategies or alternative medications in some cases."]
+    },
+    {"tag": "fact-199",
+        "patterns": ["What are some common types of therapy for obsessive-compulsive disorder (OCD)?"],
+        "responses": ["Common types of therapy for OCD include exposure and response prevention (ERP), which involves gradual exposure to feared situations or objects without engaging in compulsive behaviors, cognitive-behavioral therapy (CBT), which targets maladaptive thoughts and beliefs, and acceptance and commitment therapy (ACT), which focuses on acceptance of difficult thoughts and emotions."]
+    },
+    {"tag": "fact-200",
+        "patterns": ["How does medication management work in treating post-traumatic stress disorder (PTSD)?"],
+        "responses": ["Medication management for PTSD involves prescribing selective serotonin reuptake inhibitors (SSRIs) or certain antidepressants to reduce symptoms of anxiety, depression, or intrusive memories, as well as prazosin or other medications to manage nightmares or sleep disturbances."]
+    },
+    {"tag": "fact-201",
+        "patterns": ["What are some common types of therapy for post-traumatic stress disorder (PTSD)?"],
+        "responses": ["Common types of therapy for PTSD include trauma-focused cognitive-behavioral therapy (TF-CBT), which targets negative beliefs and emotions related to traumatic experiences, eye movement desensitization and reprocessing (EMDR), which uses bilateral stimulation to process traumatic memories, and narrative exposure therapy (NET), which helps individuals integrate fragmented memories into a coherent narrative."]
+    },
+    {"tag": "fact-202",
+        "patterns": ["How does medication management work in treating substance use disorders?"],
+        "responses": ["Medication management for substance use disorders involves prescribing medications such as methadone or buprenorphine for opioid addiction, naltrexone or acamprosate for alcohol use disorder, or disulfiram or naltrexone for alcohol dependence, as well as medications to manage withdrawal symptoms or cravings."]
+    },
+    {"tag": "fact-203",
+        "patterns": ["What are some common types of therapy for substance use disorders?"],
+        "responses": ["Common types of therapy for substance use disorders include cognitive-behavioral therapy (CBT), which targets maladaptive thoughts and behaviors related to substance use, motivational interviewing, which helps individuals explore ambivalence about change, and contingency management, which provides incentives for abstinence or treatment adherence."]
+    },
+    {"tag": "fact-204",
+        "patterns": ["How does medication management work in treating eating disorders?"],
+        "responses": ["Medication management for eating disorders involves prescribing medications such as selective serotonin reuptake inhibitors (SSRIs) or certain antipsychotics to manage symptoms of depression, anxiety, or obsessive-compulsive behaviors, as well as medications to address comorbid conditions or complications."]
+    },
+    {"tag": "fact-205",
+        "patterns": ["What are some common types of therapy for eating disorders?"],
+        "responses": ["Common types of therapy for eating disorders include cognitive-behavioral therapy (CBT), which targets dysfunctional thoughts and behaviors related to food and body image, dialectical behavior therapy (DBT), which focuses on emotion regulation and distress tolerance, and family-based therapy, which involves parents in the treatment process."]
+    },
+    {"tag": "fact-206",
+        "patterns": ["How does medication management work in treating bipolar disorder?"],
+        "responses": ["Medication management for bipolar disorder involves prescribing mood stabilizers such as lithium or valproate to manage manic or hypomanic symptoms, antipsychotics or antidepressants in some cases, and combinations of medications tailored to individual symptom presentation."]
+    }
+    ]
+}

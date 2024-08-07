@@ -1,0 +1,96 @@
+{% extends 'layout/theme.html' %}
+
+{% block title %}
+    Chatbot
+{% endblock %}
+
+{% block style %}
+    <link href="{{url_for('static',filename='css/output.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="mt-5">Chatbot</h1>
+        <div id="chat-interface" class="border rounded-lg overflow-hidden mt-5">
+            <div id="chat-container" class="p-3 space-y-3">
+                {% if user_input %}
+                    <div class="flex justify-end">
+                        <div class="bg-gray-200 rounded-lg p-3 max-w-xs">
+                            <p class="text-sm">{{ user_input }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+
+                <div id="loading" style="display: none;">
+                    <div class="flex justify-end">
+                        <div class="bg-gray-200 rounded-lg p-3 max-w-xs">
+                            <p class="text-sm">Processing...</p>
+                        </div>
+                    </div>
+                </div>
+
+                {% if response %}
+                    <div class="flex justify-start">
+                        <div class="bg-blue-500 text-white rounded-lg p-3 max-w-xs">
+                            <p class="text-sm">{{ response }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+
+            <form id="chatbotForm" action="/chatbot" method="post" class="p-3 bg-gray-100">
+                <div class="form-group">
+                    <label for="user_input">Enter your message:</label>
+                    <input type="text" class="form-control" id="user_input" name="user_input">
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Send</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+    $('#chatbotForm').on('submit', function(e) {
+        e.preventDefault(); // prevent the form from submitting normally
+
+        // show the loading spinner
+        $('#loading').show();
+
+        // get the form data
+        var formData = $(this).serialize();
+
+        // send the form data using fetch API
+        fetch('/chatbot', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            // hide the loading spinner
+            $('#loading').hide();
+
+            // update the chatbot response in the UI
+            // assuming the response data has a 'response' property
+            $('#chat-container').append(`
+                <div class="flex justify-start">
+                    <div class="bg-blue-500 text-white rounded-lg p-3 max-w-xs">
+                        <p class="text-sm">${data.response}</p>
+                    </div>
+                </div>
+            `);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
+});
+    </script>
+{% endblock %}
